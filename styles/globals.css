@@ -1,24 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 .container {
-    max-width: 1298px;
+  max-width: 1298px;
 }
 
-.sideCart {
-    max-width: 80vw; /* Adjust the value as needed */
-  }
+.menu {
+  max-width: 80vw;
+  /* Adjust the value as needed */
+}
 
-  @media (max-width: 768px) {
-    .sideCart {
-      position: fixed; /* or another positioning that works for small screens */
-    }
-  }
-
+@media (max-width: 768px) {
   .sideCart {
-    overflow: hidden;
+    position: fixed;
+    /* or another positioning that works for small screens */
   }
-  
-  /* body, html {
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.cookie-regular {
+  font-family: "Cookie", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about-wave {
+  background-image: url(https://www.mightymillets.com/assets/images/about_us_curve.png);
+  background-size: 50% 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* body, html {
     margin: 0;
     padding: 0;
     width: 100%;
