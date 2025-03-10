@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import LoadingBar from 'react-top-loading-bar'
 
-export default function App({ Component, pageProps}) {
+export default function App({ Component}) {
   const [progress, setProgress] = useState(0)
   const router = useRouter();
 
@@ -25,7 +25,7 @@ export default function App({ Component, pageProps}) {
       onLoaderFinished={() => setProgress(0)}
     />
     <Navbar  />
-    <Component {...pageProps} />
+    <Component />
     <Footer />
   </>
 }
