@@ -59,15 +59,6 @@ const Hero = () => {
                     </motion.div>
                 </div>
             </section>
-
-            <style jsx>{`
-                .clip-wave {
-                    /* down(Left-right), top-bottom, up(Left-right),  */
-                    clip-path: polygon(33% 100%, 70% 0, 100% 0, 100% 100%);
-                    opacity: 0.3;
-                }
-            `}</style>
-
         </div>
     )
 }

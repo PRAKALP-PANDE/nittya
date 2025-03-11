@@ -5,7 +5,7 @@
   max-width: 1298px;
 }
 
-.menu {
+.sideCart {
   max-width: 80vw;
   /* Adjust the value as needed */
 }
@@ -17,7 +17,7 @@
   }
 }
 
-.menu {
+.sideCart {
   overflow: hidden;
 }
 
@@ -37,9 +37,22 @@
   padding-bottom: 80px;
 }
 
-/* body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-  } */
+@media (max-width: 767px) {
+  .about-wave {
+    background-size: 50% 50%;
+  }
+}
+
+.clip-wave {
+  /* down(Left-right), top-bottom, up(Left-right),  */
+  clip-path: polygon(33% 100%, 70% 0, 100% 0, 100% 100%);
+  opacity: 0.3;
+}
+
+@media (max-width: 767px) {
+  .clip-wave {
+    /* down(Left-right), top-bottom, up(Left-right),  */
+    clip-path: polygon(33% 64%, 70% 0, 100% 0, 100% 65%);
+    opacity: 0.3;
+  }
+}
