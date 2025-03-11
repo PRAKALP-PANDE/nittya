@@ -80,7 +80,7 @@ const Navbar = ({ user }) => {
       >
         {/* Logo */}
         <div className="logo">
-            <Link href={'/'} className="max-w-2xl mb-4 text-5xl cookie-regular font-normal tracking-wider leading-tight text-green-950 bg-white py-10 px-4 rounded-b-3xl items-center shadow-lg">Nittya</Link>
+          <Link href={'/'} className="max-w-2xl mb-4 text-5xl cookie-regular font-normal tracking-wider leading-tight text-green-950 bg-white py-10 px-4 rounded-b-3xl items-center shadow-lg">Nittya</Link>
         </div>
 
         {/* Navigation Links */}
@@ -88,38 +88,38 @@ const Navbar = ({ user }) => {
           <Link href={'/'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Home</span>
           </Link>
-          <Link href={'/kids'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Kids</span>
+          <Link href={'/#aboutUs'}>
+            <span className="hover:text-green-600 transition duration-300 cursor-pointer">About Us</span>
           </Link>
           <Link href={'/women'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Women</span>
+            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Products</span>
           </Link>
           <Link href={'/mens'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Men's</span>
+            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Shop By Conditions</span>
           </Link>
-          <Link href={'/energyballs'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Energy Balls</span>
+          <Link href={'/#happyCustomers'}>
+            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Happy Customers</span>
           </Link>
-          <Link href={'/articles'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Blogs</span>
+          <Link href={'/contact'}>
+            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Contact Us</span>
           </Link>
         </nav>
 
         {/* Icons (Account, Cart) */}
         <div className="flex items-center space-x-6">
-          <Link href="/contact" className="text-xl hover:text-green-600 transition duration-300 cursor-pointer">Menu</Link>
+          <Link href="/contact" className="text-xl hover:text-green-600 transition duration-300 cursor-pointer">Contact Us</Link>
         </div>
 
       </div>
 
       {/* Navbar for smaller devices */}
 
-      <div className={`flex flex-col md:hidden justify-center items-center py-3 shadow-md sticky top-0 bg-white z-20 transition-all ${!sideMenu && 'overflow-hidden'}`}>
+      <div className={`flex md:hidden flex-col md:flex-row md:justify-start justify-center items-center py-4 shadow-lg sticky top-0 bg-white z-50 ${!sideMenu && 'overflow-hidden'} `}>
         <div className="cursor-pointer menu absolute left-4 top-1/2 transform -translate-y-1/2 flex items-center">
           <HiOutlineMenuAlt1 onClick={toggleMenu} className='text-3xl transition-transform hover:scale-110 active:scale-95 text-gray-700' />
         </div>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <div className="logo mx-5 md:w-auto w-40">
+        <nav className="w-full flex justify-center items-center">
+          <div className="logo mx-5 md:w-auto w-40 flex justify-center">
             <Link href={'/'} className='text-5xl font-bold bg-gradient-to-r from-[#31985a] to-[#2b8a51] bg-clip-text text-transparent hover:from-gray-800 hover:to-gray-400 italic cookie-regular transition-all hover:scale-105'>Nittya</Link>
           </div>
         </nav>
@@ -128,7 +128,7 @@ const Navbar = ({ user }) => {
 
         <div ref={refMenu} className={`w-80 h-[100vh] z-30 menu overflow-y-scroll absolute top-0 bg-black px-8 py-10 transition-all ${sideMenu ? `left-0` : `-left-96`}`}>
           {/* <h2 className="font-bold text-3xl text-white">Log in</h2> */}
-          <span className='absolute top-6 left-6 cursor-pointer text-3xl text-white hover:text-blue-300'>
+          <span className='absolute top-6 left-6 cursor-pointer text-5xl text-white hover:text-blue-300 cookie-regular'>
             Nittya
           </span>
           <span onClick={toggleMenu} className="absolute top-6 right-6 cursor-pointer text-3xl text-white hover:text-red-300">

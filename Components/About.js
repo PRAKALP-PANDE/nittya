@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <section className="text-gray-600 body-font lg:h-screen about-wave bg-gray-100 py-12">
+        <section id='aboutUs' className="text-gray-600 body-font lg:h-screen about-wave bg-gray-100 py-12">
             <div className="container mx-auto flex px-6 lg:px-16 lg:py-12 md:flex-row flex-col justify-between items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
                     <img className="object-cover object-center rounded-full shadow-lg border-4 border-[#2d9155]" alt="hero" src="https://www.mightymillets.com/assets/images/home_about_meena.jpg" />
