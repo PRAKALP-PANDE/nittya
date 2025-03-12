@@ -48,6 +48,21 @@ const nutritionPlans = [
         image: "icon_heart_beats.png",
         title: "Health Condition Management"
     }
+];
+
+const fitnessAndLifestyle = [
+    {
+        title: "Ideal for all age groups to become fit and adapt a healthy lifestyle."
+    },
+    {
+        title: "Inculcating balanced diet and wholesome foods into your daily routine according to your nutritional needs."
+    },
+    {
+        title: "Cooking methods to retain maximum nutrients and healthiest combination of oils."
+    },
+    {
+        title: "Suggestions for daily exercise according to one's body type"
+    }
 ]
 
-export { productsList, nutritionPlans };
+export { productsList, nutritionPlans, fitnessAndLifestyle };

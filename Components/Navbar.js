@@ -94,6 +94,9 @@ const Navbar = ({ user }) => {
           <Link href={'/women'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Products</span>
           </Link>
+          <Link href={'/nutritionplan'}>
+            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Nutrition Plan</span>
+          </Link>
           <Link href={'/mens'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Shop By Conditions</span>
           </Link>
