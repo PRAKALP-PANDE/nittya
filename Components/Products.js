@@ -47,7 +47,7 @@ const Products = () => {
                 <Slider {...settings}>
                     {productsList && productsList.map((product, index) => (
                         <div key={`experience-point-${index}`} className="px-2">
-                            <Link href="#" className="container relative block rounded-tr-3xl border-2 border-gray-100">
+                            <Link href="/product/index" className="container relative block rounded-tr-3xl border-2 border-gray-100">
                                 <img
                                     src={product.image}
                                     alt="" className="h-80 w-full rounded-tr-3xl object-cover" />
