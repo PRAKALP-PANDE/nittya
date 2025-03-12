@@ -4,7 +4,7 @@ import { IoMdCheckmark } from "react-icons/io";
 
 const FitnessnLifestyle = () => {
     return (
-        <section className="py-40">
+        <section className="py-10 md:py-40">
             <div className="container px-5 mx-auto flex flex-wrap">
                 <h2 className="mb-10 md:mb-10 text-4xl sm:text-5xl md:text-6xl cookie-regular font-normal leading-16 text-[#2f9457] text-center w-full">Fitness & Lifestyle</h2>
                 <div className="flex flex-wrap -m-4">

@@ -63,6 +63,27 @@ const fitnessAndLifestyle = [
     {
         title: "Suggestions for daily exercise according to one's body type"
     }
-]
+];
 
-export { productsList, nutritionPlans, fitnessAndLifestyle };
+const detoxAndWeightLoss = [
+    {
+        title: "Detox and replenish your body with variety of nutrients which will leave you feeling energetic and increase your stamina."
+    },
+    {
+        title: "Makes your skin glow"
+    },
+    {
+        title: "Jumpstart your metabolism"
+    },
+    {
+        title: "Smooth changes in the plan"
+    },
+    {
+        title: "Balanced diet for weight loss in a healthy manner"
+    },
+    {
+        title: "Expect a weight loss of up to 4-5 kgs"
+    }
+];
+
+export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss };
