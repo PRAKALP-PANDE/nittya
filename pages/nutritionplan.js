@@ -1,5 +1,6 @@
 import DetoxWeightLoss from '@/Components/DetoxWeightLoss'
 import FitnessnLifestyle from '@/Components/FitnessnLifestyle'
+import HealthConditionDiet from '@/Components/HealthConditionDiet'
 import React from 'react'
 
 const NutritionPlan = () => {
@@ -7,6 +8,7 @@ const NutritionPlan = () => {
         <div>
             <FitnessnLifestyle />
             <DetoxWeightLoss />
+            <HealthConditionDiet />
         </div>
     )
 }
