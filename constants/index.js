@@ -94,6 +94,9 @@ const whatsappMessage = {
     "fattyLiverPlan": "Hi, I'm reaching out to learn more about your Fatty Liver Diet Plan | Heal Your Liver Naturally Diet Plan.",
     "thyroidPlan": "Hi, I'm reaching out to learn more about your Fatty Liver Diet Plan | Heal Your Liver Naturally Diet Plan.",
     "pcosPlan": "Hi, I'm reaching out to learn more about your PCOS/PCOD Diet Plan | Balance Hormones & Improve Fertility Diet Plan.",
+    "pcosPlan": "Hi, I'm reaching out to learn more about your PCOS/PCOD Diet Plan | Balance Hormones & Improve Fertility Diet Plan.",
+    "pregnancyDIetPlan": "Hi, I'm reaching out to learn more about your Pregnancy Diet Plan | Nutrition for a Healthy Pregnancy Diet Plan.",
+    "postNatalplan": "Hi, I'm reaching out to learn more about your Post-Natal Diet Plan | Nutrition for Recovery & Breastfeeding Diet Plan.",
   };
 
 export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss, whatsappMessage };
