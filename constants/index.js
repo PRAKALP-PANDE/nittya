@@ -86,4 +86,14 @@ const detoxAndWeightLoss = [
     }
 ];
 
-export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss };
+const whatsappMessage = {
+    "womenDietPlan": "Hi, I'm reaching out to learn more about your Women's Diet Plan.",
+    "menDietPlan": "Hi, I'm reaching out to learn more about your Men's Diet Plan.",
+    "diabetesPlan": "Hi, I'm reaching out to learn more about your Diabetes Reversal Diet Plan.",
+    "bloodPressurePlan": "Hi, I'm reaching out to learn more about your Blood Pressure & Cholesterol | Heart-Healthy Nutrition Diet Plan.",
+    "fattyLiverPlan": "Hi, I'm reaching out to learn more about your Fatty Liver Diet Plan | Heal Your Liver Naturally Diet Plan.",
+    "thyroidPlan": "Hi, I'm reaching out to learn more about your Fatty Liver Diet Plan | Heal Your Liver Naturally Diet Plan.",
+    "pcosPlan": "Hi, I'm reaching out to learn more about your PCOS/PCOD Diet Plan | Balance Hormones & Improve Fertility Diet Plan.",
+  };
+
+export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss, whatsappMessage };
