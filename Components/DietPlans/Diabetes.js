@@ -1,0 +1,107 @@
+import React from 'react'
+import { whatsappMessage } from '@/constants';
+import Link from 'next/link';
+import { IoMdCheckmark } from "react-icons/io";
+
+const Diabetes = () => {
+
+    const message = whatsappMessage.diabetesPlan
+    const whatsappLink = `https://wa.me/9922015121?text=${message}`;
+
+    return (
+        <div>
+            <div className="flex flex-wrap border-2 p-6 rounded-2xl">
+                <h5 className="mb-5 md:mb-8 text-3xl sm:text-5xl md:text-4xl cookie-regular text-[#2f9457] text-center w-full">
+                    Diabetes Reversal Diet Plan | Naturally Control Blood Sugar
+                </h5>
+                <div className="p-4 lg:w-1/2">
+                    <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img
+                            alt="women's nutrition"
+                            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                            src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        />
+                        <div className="flex-grow sm:pl-8">
+                            <p className="mb-4 text-lg">
+                                A structured meal plan designed to <b>stabilize blood sugar, promote weight loss, and support diabetes reversal.</b></p>
+                            <div className="flex flex-col space-y-2">
+                                <div className="flex items-center">
+                                    <span className="inline-block mr-2 text-[#31985a]">•</span>
+                                    <span>Pricing: ₹4999 for 3 months (13 weeks)</span>
+                                </div>
+                            </div>
+                            <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                                <button className="mt-6 px-6 py-2 bg-[#2f9457] text-white rounded-lg hover:bg-[#247a46] transition-colors">
+                                    Start your journey today!
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="md:p-4 lg:w-1/2 md:w-full flex md:flex-row flex-col">
+                    <div className="p-4 lg:w-1/2 md:w-full">
+                        <div className="flex relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Balanced Meals </h3>
+                                <p className="text-lg leading-6 font-light">Avoid sugar spikes with low-glycemic, high-fiber meals.</p>
+                            </div>
+                        </div>
+                        <div className="flex relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Weight Management</h3>
+                                <p className="text-lg leading-6 font-light">Improve insulin sensitivity with nutrient-dense, home-cooked food.</p>
+                            </div>
+                        </div>
+                        <div className="flex relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">No Supplements</h3>
+                                <p className="text-lg leading-6 font-light">100% natural, no powders or artificial substitutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-4 lg:w-1/2 md:w-full">
+                        <div className="flex relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Daily Diet Plan</h3>
+                                <p className="text-lg leading-6 font-light">Easy-to-follow meal plans with detailed recipes.</p>
+                            </div>
+                        </div>
+                        <div className="flex relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Diabetes Care Sheet</h3>
+                                <p className="text-lg leading-6 font-light">Expert tips to manage and reverse diabetes naturally.</p>
+                            </div>
+                        </div>
+                        <div className="flex relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Holistic Nutrition</h3>
+                                <p className="text-lg leading-6 font-light">Address iron, calcium, and hormonatl imbalances.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Diabetes
