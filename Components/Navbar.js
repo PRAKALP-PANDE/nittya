@@ -5,6 +5,7 @@ import { VscClose } from "react-icons/vsc";
 import { LuUser } from "react-icons/lu";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube, IoLogoTwitter, IoLogoPinterest, IoLogoLinkedin } from "react-icons/io5";
 import Dropdown from './Dropdown';
+import { useRouter } from 'next/router';
 
 
 const Navbar = ({ user }) => {
@@ -14,6 +15,9 @@ const Navbar = ({ user }) => {
   const [sideMenu, setSideMenu] = useState(false)
 
   const [navbar, setNavbar] = useState(false);
+
+  const router = useRouter();
+  const isHome = router.pathname === '/';
 
   useEffect(() => {
     const changeBackground = () => {
@@ -75,7 +79,7 @@ const Navbar = ({ user }) => {
     <>
       {/* Navbar for medium devices */}
       <div
-        className={`hidden fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar ? 'bg-white text-black shadow-lg' : 'bg-transparent text-white'
+        className={`hidden fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar ? 'bg-white text-black shadow-lg' : `${isHome ? 'bg-transparent text-white' : 'bg-white text-black'}`
           }`}
       >
         {/* Logo */}
