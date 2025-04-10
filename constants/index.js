@@ -34,15 +34,15 @@ const productsList = [
 const nutritionPlans = [
     {
         image: "icon_writing_pad.png",
-        title: "Fitnews and lifestyle"
+        title: "Women’s Weight loss diet plan"
     },
     {
         image: "icon_bottle.png",
-        title: "Detox + Weight Loss"
+        title: "Men’s Weight loss diet plan"
     },
     {
         image: "icon_alarm.png",
-        title: "Weight Management and Inch Loss"
+        title: "Couples Weight loss diet plan"
     },
     {
         image: "icon_heart_beats.png",
