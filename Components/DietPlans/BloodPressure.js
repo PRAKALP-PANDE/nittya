@@ -10,7 +10,7 @@ const BloodPressure = () => {
 
     return (
         <div>
-            <div className="flex flex-wrap border-2 p-6 rounded-2xl">
+            <div className="flex flex-wrap p-3 m-5 bg-white shadow-lg rounded-2xl shadow-gray-800">
                 <h5 className="mb-5 md:mb-8 text-3xl sm:text-5xl md:text-4xl cookie-regular text-[#2f9457] text-center w-full">
                     Blood Pressure & Cholesterol Diet Plan | Heart-Healthy Nutrition
                 </h5>
@@ -40,9 +40,9 @@ const BloodPressure = () => {
                     </div>
                 </div>
 
-                <div className="p-4 lg:w-1/2 md:w-full flex flex-col">
+                <div className="p-2 lg:w-1/2 md:w-full flex flex-col">
 
-                    <div className="p-4 md:w-full flex md:flex-grow md:flex-row flex-col">
+                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
                             <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
                                 <IoMdCheckmark />
@@ -63,7 +63,7 @@ const BloodPressure = () => {
                         </div>
                     </div>
 
-                    <div className="p-4 md:w-full flex md:flex-grow md:flex-row flex-col">
+                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
                             <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
                                 <IoMdCheckmark />
@@ -84,7 +84,7 @@ const BloodPressure = () => {
                         </div>
                     </div>
 
-                    <div className="p-4 md:w-full flex md:flex-grow md:flex-row flex-col">
+                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
                             <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
                                 <IoMdCheckmark />

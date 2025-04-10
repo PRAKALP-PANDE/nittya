@@ -10,7 +10,7 @@ const PCOS = () => {
 
     return (
         <div>
-            <div className="flex flex-wrap border-2 p-6 rounded-2xl">
+            <div className="flex flex-wrap p-3 m-5 bg-white shadow-lg rounded-2xl shadow-gray-800">
                 <h5 className="mb-5 md:mb-8 text-3xl sm:text-5xl md:text-4xl cookie-regular text-[#2f9457] text-center w-full">
                     PCOS/PCOD Diet Plan | Balance Hormones & Improve Fertility
                 </h5>
@@ -23,7 +23,7 @@ const PCOS = () => {
                         />
                         <div className="flex-grow sm:pl-8">
                             <p className="mb-4 text-lg">
-                                Support PCOS function naturally with a diet customized for your condition.</p>
+                            Manage PCOS/PCOD naturally by focusing on hormone-balancing foods.</p>
                             <div className="flex flex-col space-y-2">
                                 <div className="flex items-center">
                                     <span className="inline-block mr-2 text-[#31985a]">•</span>
@@ -38,16 +38,16 @@ const PCOS = () => {
                         </div>
                     </div>
                 </div>
-                <div className="p-4 lg:w-1/2 md:w-full flex flex-col">
+                <div className="p-2 lg:w-1/2 md:w-full flex flex-col">
 
-                    <div className="p-4 md:w-full flex md:flex-grow md:flex-row flex-col">
+                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
                             <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Balanced Nutrition</h3>
-                                <p className="text-lg leading-6 font-light">Anti-inflammatory foods like fruits, vegetables, and lean proteins.</p>
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Low-Glycemic, High-Fiber Diet</h3>
+                                <p className="text-lg leading-6 font-light">Control insulin resistance and blood sugar spikes.</p>
                             </div>
                         </div>
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
@@ -55,41 +55,41 @@ const PCOS = () => {
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Adjust Meal Choices</h3>
-                                <p className="text-lg leading-6 font-light">Plans tailored for hypoPCOSism and hyperPCOSism.</p>
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Healthy Fats & Lean Proteins</h3>
+                                <p className="text-lg leading-6 font-light">Support hormone regulation and reduce inflammation.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="p-4 md:w-full flex md:flex-grow md:flex-row flex-col">
+                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
                             <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Iron & Calcium Support</h3>
-                                <p className="text-lg leading-6 font-light">Improve nutritional deficiencies affecting the PCOS.</p>
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Weight Management</h3>
+                                <p className="text-lg leading-6 font-light">Sustainable fat loss strategies for long-term health.</p>
                             </div>
                         </div>
-                        <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
-                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
-                                <IoMdCheckmark />
-                            </div>
-                            <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">No Supplements</h3>
-                                <p className="text-lg leading-6 font-light">100% home-cooked, natural diet.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="p-4 md:w-full flex md:flex-grow md:flex-row flex-col">
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
                             <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
                                 <h3 className="font-medium text-xl text-gray-900 mb-1">PCOS Care Sheet</h3>
-                                <p className="text-lg leading-6 font-light">Expert tips for PCOS health and weight management.</p>
+                                <p className="text-lg leading-6 font-light">Tips for managing symptoms, fertility, and cycle regularity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
+                        <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">No Supplements</h3>
+                                <p className="text-lg leading-6 font-light">Only fresh, home-cooked meals.</p>
                             </div>
                         </div>
                     </div>

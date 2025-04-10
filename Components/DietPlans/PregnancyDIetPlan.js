@@ -3,16 +3,16 @@ import { whatsappMessage } from '@/constants';
 import Link from 'next/link';
 import { IoMdCheckmark } from "react-icons/io";
 
-const Diabetes = () => {
+const PregnancyDIetPlan = () => {
 
-    const message = whatsappMessage.diabetesPlan
+    const message = whatsappMessage.pregnancyDIetPlan
     const whatsappLink = `https://wa.me/9922015121?text=${message}`;
 
     return (
         <div>
             <div className="flex flex-wrap p-3 m-5 bg-white shadow-lg rounded-2xl shadow-gray-800">
                 <h5 className="mb-5 md:mb-8 text-3xl sm:text-5xl md:text-4xl cookie-regular text-[#2f9457] text-center w-full">
-                    Diabetes Reversal Diet Plan | Naturally Control Blood Sugar
+                    Pregnancy Diet Plan | Nutrition for a Healthy Pregnancy
                 </h5>
                 <div className="p-4 lg:w-1/2">
                     <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
@@ -23,7 +23,7 @@ const Diabetes = () => {
                         />
                         <div className="flex-grow sm:pl-8">
                             <p className="mb-4 text-lg">
-                                A structured meal plan designed to <b>stabilize blood sugar, promote weight loss, and support diabetes reversal.</b></p>
+                            Ensure the best nutrition for you and your baby with a balanced pregnancy meal plan.</p>
                             <div className="flex flex-col space-y-2">
                                 <div className="flex items-center">
                                     <span className="inline-block mr-2 text-[#31985a]">•</span>
@@ -46,8 +46,8 @@ const Diabetes = () => {
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Balanced Meals </h3>
-                                <p className="text-lg leading-6 font-light">Avoid sugar spikes with low-glycemic, high-fiber meals.</p>
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Balanced Whole Foods</h3>
+                                <p className="text-lg leading-6 font-light">Fruits, vegetables, whole grains, and lean proteins.</p>
                             </div>
                         </div>
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
@@ -55,29 +55,8 @@ const Diabetes = () => {
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Weight Management</h3>
-                                <p className="text-lg leading-6 font-light">Improve insulin sensitivity with nutrient-dense, home-cooked food.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
-                        <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
-                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
-                                <IoMdCheckmark />
-                            </div>
-                            <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">No Supplements</h3>
-                                <p className="text-lg leading-6 font-light">100% natural, no powders or artificial substitutes.</p>
-                            </div>
-                        </div>
-                        <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
-                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
-                                <IoMdCheckmark />
-                            </div>
-                            <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Daily Diet Plan</h3>
-                                <p className="text-lg leading-6 font-light">Easy-to-follow meal plans with detailed recipes.</p>
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Folate-Rich Foods</h3>
+                                <p className="text-lg leading-6 font-light">Support fetal development with leafy greens, beans, and grains.</p>
                             </div>
                         </div>
                     </div>
@@ -88,8 +67,8 @@ const Diabetes = () => {
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Diabetes Care Sheet</h3>
-                                <p className="text-lg leading-6 font-light">Expert tips to manage and reverse diabetes naturally.</p>
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Iron & Calcium Support</h3>
+                                <p className="text-lg leading-6 font-light">Promote blood and bone health with dairy and fortified foods.</p>
                             </div>
                         </div>
                         <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
@@ -97,8 +76,20 @@ const Diabetes = () => {
                                 <IoMdCheckmark />
                             </div>
                             <div className="flex-grow pl-4">
-                                <h3 className="font-medium text-xl text-gray-900 mb-1">Holistic Nutrition</h3>
-                                <p className="text-lg leading-6 font-light">Address iron, calcium, and hormonatl imbalances.</p>
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Healthy Fats</h3>
+                                <p className="text-lg leading-6 font-light">Include omega-3s (fish, flaxseeds) for baby’s brain development.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="p-2 md:w-full flex md:flex-grow md:flex-row flex-col">
+                        <div className="flex lg:mx-2 lg:w-1/2 relative pb-6 items-start">
+                            <div className="flex-shrink-0 w-6 h-6 text-2xl bg-[#31985a] text-white rounded-full inline-flex items-center justify-center relative z-10 mt-1">
+                                <IoMdCheckmark />
+                            </div>
+                            <div className="flex-grow pl-4">
+                                <h3 className="font-medium text-xl text-gray-900 mb-1">Pregnancy Care Sheet</h3>
+                                <p className="text-lg leading-6 font-light">Expert tips on nutrition and well-being during pregnancy.</p>
                             </div>
                         </div>
                     </div>
@@ -109,4 +100,4 @@ const Diabetes = () => {
     )
 }
 
-export default Diabetes
+export default PregnancyDIetPlan
