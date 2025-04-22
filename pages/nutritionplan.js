@@ -1,13 +1,13 @@
-import DetoxWeightLoss from '@/Components/DetoxWeightLoss'
-import FitnessnLifestyle from '@/Components/FitnessnLifestyle'
+import MensDietPlan from '@/Components/DetoxWeightLoss'
 import HealthConditionDiet from '@/Components/HealthConditionDiet'
+import WomenDietPlan from '@/Components/WomenDietPlan'
 import React from 'react'
 
 const NutritionPlan = () => {
     return (
         <div>
-            <FitnessnLifestyle />
-            <DetoxWeightLoss />
+            <WomenDietPlan />
+            <MensDietPlan />
             <HealthConditionDiet />
         </div>
     )
