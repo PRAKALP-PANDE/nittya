@@ -12,7 +12,7 @@ const BloodPressure = () => {
         <div>
             <div className="flex flex-wrap p-3 m-5 bg-white shadow-lg rounded-2xl shadow-gray-800">
                 <h5 className="mb-5 md:mb-8 text-3xl sm:text-5xl md:text-4xl cookie-regular text-[#2f9457] text-center w-full">
-                    Blood Pressure & Cholesterol Diet Plan | Heart-Healthy Nutrition
+                    Blood Pressure & Cholesterol Weight Loss Diet Plan | Heart-Healthy Nutrition
                 </h5>
                 
                 <div className="p-4 lg:w-1/2">
