@@ -31,28 +31,43 @@ const FaqSection = () => {
     };
 
     return (
-        <div className="w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-                {faqData.map((faq, index) => (
-                    <div key={index} className="border-b border-gray-200 pb-4">
-                        <button
-                            onClick={() => toggleFaq(index)}
-                            className="w-full text-left text-xl font-semibold text-gray-800 flex items-center justify-between"
+        <div className="relative py-16 px-6 sm:px-10 lg:px-20 rounded-lg shadow-xl overflow-hidden">
+            {/* Decorative Images */}
+            <img src="https://www.shutterstock.com/image-photo/world-best-exotic-fruit-platter-260nw-2490229919.jpg" alt="fruit" className="absolute top-4 left-4 w-20 opacity-30 rotate-12" />
+            <img src="https://marleyspoon.com/media/recipes/85013/main_photos/large/vegie-398b78339b89602cf740f52d2a54b6aa.jpeg" alt="veggie" className="absolute bottom-4 right-4 w-24 opacity-30 rotate-[-12deg]" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzw7A-G0lFW-jm9X782tVRexVdfol64vuNnA&s" alt="leaf" className="absolute top-1/2 right-10 w-16 opacity-20 hidden md:block" />
+
+            <div className="relative z-10 max-w-4xl mx-auto">
+                <h2 className="text-4xl font-extrabold text-center text-green-800 mb-10 drop-shadow-md">
+                    Frequently Asked Questions
+                </h2>
+                <div className="space-y-6">
+                    {faqData.map((faq, index) => (
+                        <div
+                            key={index}
+                            className="bg-white border border-green-200 rounded-lg shadow-sm p-4 transition duration-300 hover:shadow-md"
                         >
-                            <span>{faq.question}</span>
-                            <span className="text-xl text-gray-500">{open === index ? '-' : '+'}</span>
-                        </button>
-                        {open === index && (
-                            <p
-                                className={`mt-2 text-gray-600 text-lg transition-all duration-300 ease-in-out ${open === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                                    }`}
+                            <button
+                                onClick={() => toggleFaq(index)}
+                                className="w-full flex justify-between items-center text-lg font-semibold text-green-900"
                             >
-                                {faq.answer}
-                            </p>
-                        )}
-                    </div>
-                ))}
+                                <span>{faq.question}</span>
+                                <span className="text-2xl text-green-500 cursor-pointer">
+                                    {open === index ? '−' : '+'}
+                                </span>
+                            </button>
+                            <div
+                                className={`mt-3 overflow-hidden transition-all duration-500 ease-in-out ${
+                                    open === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
+                                }`}
+                            >
+                                <p className="text-gray-700 text-base leading-relaxed">
+                                    {faq.answer}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
