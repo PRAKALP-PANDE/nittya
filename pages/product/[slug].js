@@ -5,12 +5,11 @@ import { MdCurrencyRupee } from "react-icons/md";
 // Sample Product Data (you can replace this with fetched data)
 const productData = {
     name: "Roasted Seed Mix",
-    images: [
-        "https://www.snitch.co.in/cdn/shop/files/4MST2527-01-M_40.jpg?v=1737189939&width=540",
-        "https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSS3819-02_1_b49d3d6e-ec9f-4cd4-8bad-341ccb80e946.jpg?v=1741094253&quality=50",
-        "https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MST2718-01_1_654d9bd5-9bbc-4d1d-909e-3d15c5d5f4ab.jpg?v=1739287341&quality=50",
-        "https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MST2723-01_1_3f02006f-7740-41ab-92c2-eea6227ca246.jpg?v=1739473296&quality=50",
-        "https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MST2637-01_1_e9b0fc84-8c6d-4b80-a31d-4f65dc9016ba.jpg?v=1739973534&quality=50"
+    "images": [
+        "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ],
     tagLine: "Crunchy Nutrition for Everyday Wellness",
     description: "Nittya’s Roasted Seed Mix is a delicious, ready-to-eat blend of sunflower, pumpkin, flax, sesame seeds, with a hint of fennel and ajwain for digestion and flavor...",
@@ -39,10 +38,9 @@ const productData = {
 
 const Product = () => {
     const [selectedImg, setSelectedImg] = useState(0);
-    const [selectedSize, setSelectedSize] = useState(productData.available_sizes[0]);
 
     return (
-        <section className="px-6 py-12 flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto">
+        <section className="px-6 py-12 md:py-24 flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto">
             {/* Left Section */}
             <div className="flex flex-1 flex-col gap-4">
                 <div className="w-full">
@@ -68,31 +66,25 @@ const Product = () => {
             {/* Right Section */}
             <div className="flex flex-1 flex-col gap-6">
                 <h1 className="text-3xl font-semibold text-gray-900">{productData.name}</h1>
-                <p className="text-gray-600 text-lg italic">{productData.tagLine}</p>
+                <p className="text-[#166534] text-lg font-bold italic">{productData.tagLine}</p>
                 <p className="text-gray-700 text-base">{productData.description}</p>
 
                 <div>
                     <label className="block mb-1 font-medium">Available Sizes</label>
-                    <select
-                        onChange={(e) => setSelectedSize(productData.available_sizes[e.target.selectedIndex])}
-                        className="w-full border border-gray-300 rounded-md px-4 py-2"
-                    >
-                        {productData.available_sizes.map((sizeOption, index) => (
-                            <option key={index} value={sizeOption.size}>
-                                {sizeOption.size} - ₹{sizeOption.price}
-                            </option>
-                        ))}
-                    </select>
+                    {productData.available_sizes.map((sizeOption, index) => (
+                        <div key={index} className="border rounded-md p-3 m-3 flex justify-between items-center">
+                            <span className="font-medium text-gray-800">{sizeOption.size}</span>
+                            {sizeOption.price ? (
+                                <span className="text-sm text-gray-500">₹{sizeOption.price} / kg</span>
+                            ) : (
+                                <span className="text-sm text-gray-400 italic">Price on request</span>
+                            )}
+                        </div>
+                    ))}
                 </div>
-
                 <div className="flex items-center gap-4 mt-4">
-                    <button className="flex items-center gap-2 px-6 py-2 bg-gray-900 text-white rounded-md hover:bg-gray-700 transition">
-                        <MdCurrencyRupee className="text-lg" />
-                        Buy Now
-                    </button>
-                    <button className="flex items-center gap-2 px-6 py-2 bg-white text-gray-900 border border-gray-900 rounded-md hover:bg-gray-100 transition">
-                        <AiOutlineShopping className="text-lg" />
-                        Add to Cart
+                    <button className="relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium text-white transition-all duration-500 bg-gradient-to-r from-[#166534] to-[#2d9155] rounded-md shadow-lg group hover:shadow-[0_10px_25px_-10px_rgba(45,145,85,0.4)] hover:translate-y-[-2px]">
+                        Learn More
                     </button>
                 </div>
 

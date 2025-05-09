@@ -1,35 +1,35 @@
-const productsList = [
-    {
-        title: "This is title",
-        image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
-        description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
-        price: 100
-    },
-    {
-        title: "This is title",
-        image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
-        description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
-        price: 100
-    },
-    {
-        title: "This is title",
-        image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
-        description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
-        price: 100
-    },
-    {
-        title: "This is title",
-        image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
-        description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
-        price: 100
-    },
-    {
-        title: "This is title",
-        image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
-        description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
-        price: 100
-    }
-];
+// const productsList = [
+//     {
+//         title: "This is title",
+//         image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
+//         description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
+//         price: 100
+//     },
+//     {
+//         title: "This is title",
+//         image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
+//         description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
+//         price: 100
+//     },
+//     {
+//         title: "This is title",
+//         image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
+//         description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
+//         price: 100
+//     },
+//     {
+//         title: "This is title",
+//         image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
+//         description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
+//         price: 100
+//     },
+//     {
+//         title: "This is title",
+//         image: "https://www.mightymillets.com/upload/product/953C8A66-C507-4860-A5B0-342E23E13AB2.jpg",
+//         description: "100% Pure Canadian Maple syrup as a sweetener Totally pure, natural and healthier alternative to heated honey or refined sugar. It is rich in antioxidants, is diabetic friendly and rich in nutrients. More nuts, less oats Significantly higher ratio of nuts, seeds and dry",
+//         price: 100
+//     }
+// ];
 
 const nutritionPlans = [
     {
@@ -87,6 +87,7 @@ const detoxAndWeightLoss = [
 ];
 
 const whatsappMessage = {
+    "heroSection": "Hi, I'm reaching out to learn more about your Diet Plans.",
     "womenDietPlan": "Hi, I'm reaching out to learn more about your Women's Diet Plan.",
     "menDietPlan": "Hi, I'm reaching out to learn more about your Men's Diet Plan.",
     "diabetesPlan": "Hi, I'm reaching out to learn more about your Diabetes Reversal Diet Plan.",
@@ -100,9 +101,16 @@ const whatsappMessage = {
     "coupleDietPlan": "Hi, I'm reaching out to learn more about your Couple Weight Loss Diet Plan.",
 };
 
-const products = [
+const productsList = [
     {
+        "slug": "Kids-Nutrimix-Powder",
         "name": "Kids Nutrimix Powder",
+        "images": [
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        ],
         "tagLine": "Wholesome Nutrition for Kids (1 Year & Above)",
         "description": "A daily nutrition mix made with carefully selected superfoods to support your child’s growth, brain development, digestion, and immunity — all in a naturally sweet, chocolatey taste kids love.",
         "ingredients": [
@@ -138,7 +146,14 @@ const products = [
         ]
     },
     {
+        "slug": "Nuts-and-Seeds-Powder",
         "name": "Nuts and Seeds Powder",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        ],
         "tagLine": "A Nutrient-Dense Blend to Power Your Day",
         "description": "Nittya’s Nuts and Seeds Powder is a superfood-packed blend designed to fuel your body with essential nutrients. Whether you’re looking to boost your energy, improve digestion, or support bone health, this natural mix of almonds, walnuts, seeds, and skimmed milk powder provides the perfect balance of protein, healthy fats, and antioxidants for a healthy, vibrant lifestyle.",
         "ingredients": [
@@ -172,7 +187,14 @@ const products = [
         ]
     },
     {
+        "slug": "Sprouted-Ragi-Energy-Balls",
         "name": "Sprouted Ragi Energy Balls",
+        "images": [
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        ],
         "tagLine": "Natural Energy. Real Ingredients. Guilt-Free Snacking.",
         "description": "Nittya’s Sprouted Ragi Energy Balls are wholesome, naturally sweetened bites made with just four clean ingredients — sprouted ragi, almonds, makhana, and soft black dates. Rich in iron, calcium, and fiber, they’re perfect for boosting energy, improving digestion, and satisfying sweet cravings the healthy way.",
         "ingredients": [
@@ -202,7 +224,14 @@ const products = [
         ]
     },
     {
+        "slug": "Flaxseeds-Energy-Balls",
         "name": "Flaxseeds Energy Balls",
+        "images": [
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
         "tagLine": "Fiber-Rich. Heart-Healthy. Naturally Sweet.",
         "description": "Nittya’s Flaxseeds Energy Balls are a nourishing snack made with a powerful mix of flaxseeds, unpolished white sesame seeds, almonds, makhana, and soft black dates. Rich in omega-3s, calcium, iron, and natural fiber, they support heart health, digestion, and sustained energy — all without any added sugar or preservatives.",
         "ingredients": [
@@ -233,7 +262,14 @@ const products = [
         ]
     },
     {
+        "slug": "Dink-Dryfruit-Laddoo",
         "name": "Dink Dryfruit Laddoo",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        ],
         "tagLine": "Traditional Goodness. Modern Nutrition.",
         "description": "Nittya’s Dink Dryfruit Laddoos are a nourishing blend of age-old ingredients known for strength, immunity, and warmth. Made with dink (edible gum), almonds, cashews, pistachios, dry date powder, poppy seeds, dry coconut, and soft black dates, these laddoos are perfect for postpartum recovery, winter nourishment, or daily energy needs.",
         "ingredients": [
@@ -264,7 +300,14 @@ const products = [
         ]
     },
     {
+        "slug": "Methi-Dink-Dryfruit-Laddoo",
         "name": "Methi Dink Dryfruit Laddoo",
+        "images": [
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        ],
         "tagLine": "Strength & Warmth in Every Bite",
         "description": "Nittya’s Methi Dink Dryfruit Laddoo is a traditional powerhouse of health — crafted with methi (fenugreek), dink (edible gum), almonds, cashews, pistachios, dry date powder, poppy seeds, dry coconut, and soft black dates. Ideal for postpartum care, joint strength, and winter nourishment, this laddoo supports digestion, stamina, and bone health.",
         "ingredients": [
@@ -296,7 +339,14 @@ const products = [
         ]
     },
     {
+        "slug": "Nuts-Seeds-Biotin-Energy-Balls",
         "name": "Nuts & Seeds Biotin Energy Balls",
+        "images": [
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
         "tagLine": "Glow from Within — Naturally.",
         "description": "Nittya’s Nuts & Seeds Biotin Energy Balls are loaded with natural sources of biotin, omega-3s, and antioxidants — made from a blend of almonds, walnuts, makhana, pumpkin seeds, sunflower seeds, flaxseeds, and soft black dates. These delicious bites support hair, skin, nail health, and daily energy, all without refined sugar or preservatives.",
         "ingredients": [
@@ -329,7 +379,14 @@ const products = [
         ]
     },
     {
+        "slug": "Kids-Healthy-Dryfruit-Laddoo",
         "name": "Kids Healthy Dryfruit Laddoo",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        ],
         "tagLine": "Tasty. Nutritious. Kid-Approved.",
         "description": "Nittya’s Kids Healthy Dryfruit Laddoos are packed with the goodness of nuts, natural sweeteners, and multigrain flour — specially crafted to support growing bodies with clean, powerful nutrition. Made using almonds, cashews, pistachios, dry date powder, dink, poppy seeds, dry coconut, soft black dates, and multigrain atta, these laddoos are perfect for boosting energy, immunity, and overall health — all in a yummy bite kids will love!",
         "ingredients": [
@@ -361,7 +418,14 @@ const products = [
         ]
     },
     {
+        "slug": "Roasted-Seed-Mix",
         "name": "Roasted Seed Mix",
+        "images": [
+            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+        ],
         "tagLine": "Crunchy Nutrition for Everyday Wellness",
         "description": "Nittya’s Roasted Seed Mix is a delicious, ready-to-eat blend of sunflower, pumpkin, flax, sesame seeds, with a hint of fennel and ajwain for digestion and flavor. Lightly roasted for better taste and absorption, this mix is rich in fiber, protein, and healthy fats — perfect for snacking, topping, or boosting your meals.",
         "ingredients": [
@@ -394,4 +458,4 @@ const products = [
     }
 ]
 
-export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss, whatsappMessage, products };
+export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss, whatsappMessage };

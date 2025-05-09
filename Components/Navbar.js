@@ -79,7 +79,7 @@ const Navbar = ({ user }) => {
     <>
       {/* Navbar for medium devices */}
       <div
-        className={`hidden fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar ? 'bg-white text-black shadow-lg' : `${isHome ? 'bg-transparent text-white' : 'bg-white text-black'}`
+        className={`hidden fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar ? 'bg-white text-black shadow-lg' : `${isHome ? 'bg-transparent text-green-900' : 'bg-white text-black'}`
           }`}
       >
         {/* Logo */}
@@ -95,13 +95,13 @@ const Navbar = ({ user }) => {
           <Link href={'/#aboutUs'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">About Us</span>
           </Link>
-          <Link href={'/women'}>
+          <Link href={'/'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Products</span>
           </Link>
           <Link href={'/nutritionplan'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Nutrition Plan</span>
           </Link>
-          <Link href={'/mens'}>
+          <Link href={'/shop'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Shop By Conditions</span>
           </Link>
           <Link href={'/#happyCustomers'}>
@@ -114,7 +114,7 @@ const Navbar = ({ user }) => {
 
         {/* Icons (Account, Cart) */}
         <div className="flex items-center space-x-6">
-          <Link href="/contact" className="text-xl hover:text-green-600 transition duration-300 cursor-pointer">Contact Us</Link>
+          <Link href="/contact" className="text-xl hover:text-green-600 transition duration-300 cursor-pointer">ToDo</Link>
         </div>
 
       </div>
