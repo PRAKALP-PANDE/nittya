@@ -1,9 +1,10 @@
+import { productsList } from '@/constants';
+import { useParams } from 'next/navigation';
 import React, { useState } from 'react';
-import { AiOutlineShopping } from "react-icons/ai";
-import { MdCurrencyRupee } from "react-icons/md";
 
 // Sample Product Data (you can replace this with fetched data)
-const productData = {
+const productasdf = {
+    name: "roasted-seed-mix",
     name: "Roasted Seed Mix",
     "images": [
         "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -37,7 +38,14 @@ const productData = {
 };
 
 const Product = () => {
+    const { slug } = useParams();
+    const product = productsList.find((p) => p.slug === slug);
+
     const [selectedImg, setSelectedImg] = useState(0);
+
+    if (!product) {
+        return <div className="p-10 text-center text-red-500">Product not found.</div>;
+    }
 
     return (
         <section className="px-6 py-12 md:py-24 flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto">
@@ -45,13 +53,13 @@ const Product = () => {
             <div className="flex flex-1 flex-col gap-4">
                 <div className="w-full">
                     <img
-                        src={productData.images[selectedImg]}
+                        src={product.images[selectedImg]}
                         alt="Main product"
                         className="w-full max-h-[600px] object-contain rounded-xl shadow"
                     />
                 </div>
                 <div className="flex gap-3 overflow-x-auto">
-                    {productData.images.map((img, idx) => (
+                    {product.images.map((img, idx) => (
                         <img
                             key={idx}
                             src={img}
@@ -65,13 +73,13 @@ const Product = () => {
 
             {/* Right Section */}
             <div className="flex flex-1 flex-col gap-6">
-                <h1 className="text-3xl font-semibold text-gray-900">{productData.name}</h1>
-                <p className="text-[#166534] text-lg font-bold italic">{productData.tagLine}</p>
-                <p className="text-gray-700 text-base">{productData.description}</p>
+                <h1 className="text-3xl font-semibold text-gray-900">{product.name}</h1>
+                <p className="text-[#166534] text-lg font-bold italic">{product.tagLine}</p>
+                <p className="text-gray-700 text-base">{product.description}</p>
 
                 <div>
                     <label className="block mb-1 font-medium">Available Sizes</label>
-                    {productData.available_sizes.map((sizeOption, index) => (
+                    {product.available_sizes.map((sizeOption, index) => (
                         <div key={index} className="border rounded-md p-3 m-3 flex justify-between items-center">
                             <span className="font-medium text-gray-800">{sizeOption.size}</span>
                             {sizeOption.price ? (
@@ -91,21 +99,21 @@ const Product = () => {
                 <div className="mt-8">
                     <h2 className="text-xl font-semibold mb-2">What's Inside</h2>
                     <ul className="list-disc ml-6 text-sm text-gray-600">
-                        {productData.ingredients.map((item, i) => <li key={i}>{item}</li>)}
+                        {product.ingredients.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                 </div>
 
                 <div className="mt-6">
                     <h2 className="text-xl font-semibold mb-2">Why It's Good</h2>
                     <ul className="list-disc ml-6 text-sm text-gray-600">
-                        {productData.why_its_good.map((item, i) => <li key={i}>{item}</li>)}
+                        {product.why_its_good.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                 </div>
 
                 <div className="mt-6">
                     <h2 className="text-xl font-semibold mb-2">How to Use</h2>
                     <ul className="list-disc ml-6 text-sm text-gray-600">
-                        {productData.how_to_use.map((item, i) => <li key={i}>{item}</li>)}
+                        {product.how_to_use.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                 </div>
             </div>
