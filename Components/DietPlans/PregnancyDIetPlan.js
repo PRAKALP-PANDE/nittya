@@ -2,6 +2,7 @@ import React from 'react'
 import { whatsappMessage } from '@/constants';
 import Link from 'next/link';
 import { IoMdCheckmark } from "react-icons/io";
+import Image from 'next/image';
 
 const PregnancyDIetPlan = () => {
 
@@ -12,18 +13,20 @@ const PregnancyDIetPlan = () => {
         <div>
             <div className="flex flex-wrap p-3 m-5 bg-white shadow-lg rounded-2xl shadow-gray-800">
                 <h5 className="mb-5 md:mb-8 text-3xl sm:text-5xl md:text-4xl cookie-regular text-[#2f9457] text-center w-full">
-                    Pregnancy Weight Loss Diet Plan | Nutrition for a Healthy Pregnancy
+                    Pregnancy Diet Plan | Nutrition for a Healthy Pregnancy
                 </h5>
                 <div className="p-4 lg:w-1/2">
                     <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                        <img
+                        <Image
+                            width={500}
+                            height={500}
+                            src="/nutiitionplan/pregnancy.png"
                             alt="women's nutrition"
                             className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                            src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                         />
                         <div className="flex-grow sm:pl-8">
                             <p className="mb-4 text-lg">
-                            Ensure the best nutrition for you and your baby with a balanced pregnancy meal plan.</p>
+                                Ensure the best nutrition for you and your baby with a balanced pregnancy meal plan.</p>
                             <div className="flex flex-col space-y-2">
                                 <div className="flex items-center">
                                     <span className="inline-block mr-2 text-[#31985a]">•</span>
