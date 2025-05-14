@@ -1,40 +1,42 @@
 import React from 'react'
 import { Apple, CalendarClock, Plane, Target, Brain, HeartPulse, Utensils, Leaf } from 'lucide-react'
+import { whatToExpect } from "../public/what_to_expect.png"
+import Image from 'next/image'
 
 const features = [
     {
         icon: <Apple className="w-8 h-8" />,
-        text: 'Consists of your favourite foods',
+        text: 'Simple, Home-Cooked Meals',
         color: 'text-green-500',
         bg: 'bg-green-50'
     },
     {
         icon: <CalendarClock className="w-8 h-8" />,
-        text: 'Planned as per your daily routine',
+        text: 'No Fancy Powders or Supplements',
         color: 'text-blue-500',
         bg: 'bg-blue-50'
     },
     {
         icon: <Plane className="w-8 h-8" />,
-        text: "Works even while traveling",
+        text: "Sustainable & Practical Diet",
         color: 'text-purple-500',
         bg: 'bg-purple-50'
     },
     {
         icon: <Target className="w-8 h-8" />,
-        text: 'Achieve health goals efficiently',
+        text: 'Wholesome & Fulfilling Meals',
         color: 'text-red-500',
         bg: 'bg-red-50'
     },
     {
         icon: <Brain className="w-8 h-8" />,
-        text: 'Relieves food anxiety',
+        text: 'Focus on Nutritional Deficiencies',
         color: 'text-yellow-500',
         bg: 'bg-yellow-50'
     },
     {
         icon: <HeartPulse className="w-8 h-8" />,
-        text: 'Improves overall wellness',
+        text: 'Fat Loss & Inch Loss, Naturally',
         color: 'text-pink-500',
         bg: 'bg-pink-50'
     }
@@ -55,11 +57,11 @@ const WhatToExpect = () => {
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-6xl font-bold text-gray-900 mb-4 cookie-regular">
+                    <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 cookie-regular">
                         What to Expect From Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">Consultation</span>
                     </h2>
                     <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                        Your personalized diet plan will transform your health journey with science-backed nutrition tailored to your lifestyle.
+                        Real Food. Real Results. No Gimmicks.
                     </p>
                 </div>
 
@@ -68,8 +70,10 @@ const WhatToExpect = () => {
                     <div className="relative flex justify-center">
                         <div className="relative w-full max-w-md rounded-3xl overflow-hidden shadow-2xl group">
                             <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-green-700/10 z-10"></div>
-                            <img
-                                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            <Image
+                                src="/what_to_expect.png"
+                                width={500}
+                                height={500}
                                 alt="Nutrition Consultation"
                                 className="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700"
                             />

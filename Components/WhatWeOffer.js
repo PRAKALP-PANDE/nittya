@@ -1,52 +1,53 @@
 import React from 'react'
 import { Apple, CalendarClock, Plane, Target, Brain, HeartPulse, Utensils, Leaf } from 'lucide-react'
+import Image from 'next/image'
 
 const features = [
     {
         icon: <Apple className="w-8 h-8" />,
-        text: 'General Wellness',
+        text: 'Men’s & Women’s Diet',
         color: 'text-green-500',
         bg: 'bg-green-50'
     },
     {
         icon: <CalendarClock className="w-8 h-8" />,
-        text: 'Diet for Kids',
+        text: 'Couples Diet',
         color: 'text-blue-500',
         bg: 'bg-blue-50'
     },
     {
         icon: <Plane className="w-8 h-8" />,
-        text: "Weight Management",
+        text: "Diabetes Care",
         color: 'text-purple-500',
         bg: 'bg-purple-50'
     },
     {
         icon: <Target className="w-8 h-8" />,
-        text: 'Pregnancy Care',
+        text: 'Cholesterol & Blood Pressure Care',
         color: 'text-red-500',
         bg: 'bg-red-50'
     },
     {
         icon: <Brain className="w-8 h-8" />,
-        text: 'Diabetic Care',
+        text: 'Fatty Liver Care',
         color: 'text-yellow-500',
         bg: 'bg-yellow-50'
     },
     {
         icon: <HeartPulse className="w-8 h-8" />,
-        text: 'PCOD / PCOS Diet',
+        text: 'Thyroid Support',
         color: 'text-pink-500',
         bg: 'bg-pink-50'
     },
     {
         icon: <Brain className="w-8 h-8" />,
-        text: 'Hypertension/Cardiac Care',
+        text: 'PCOS/PCOD Diet',
         color: 'text-sky-500',
         bg: 'bg-sky-50'
     },
     {
         icon: <HeartPulse className="w-8 h-8" />,
-        text: 'Diets for all Medical Conditions',
+        text: 'Pregnancy & Postnatal Care',
         color: 'text-violet-500',
         bg: 'bg-violet-50'
     }
@@ -67,11 +68,11 @@ const WhatWeOffer = () => {
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-6xl font-bold text-gray-900 mb-4 cookie-regular">
+                    <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 cookie-regular">
                         What we <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">offer</span>
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                        Your personalized diet plan will transform your health journey with science-backed nutrition tailored to your lifestyle.
+                    <p className="text-md md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Simple Diet Plans for Common Health Concerns.
                     </p>
                 </div>
 
@@ -81,8 +82,10 @@ const WhatWeOffer = () => {
                     <div className="relative flex justify-center order-1 lg:order-2">
                         <div className="relative w-full max-w-md rounded-3xl overflow-hidden shadow-2xl group">
                             <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-green-700/10 z-10"></div>
-                            <img
-                                src="https://plus.unsplash.com/premium_photo-1661393458386-4101ce49c82f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            <Image
+                                width={500}
+                                height={500}
+                                src="/homepage/what_we_offer.png"
                                 alt="Nutrition Consultation"
                                 className="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700"
                             />
