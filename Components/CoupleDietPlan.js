@@ -1,4 +1,5 @@
 import { whatsappMessage } from '@/constants';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import { IoMdCheckmark } from "react-icons/io";
@@ -11,20 +12,22 @@ const CoupleDietPlan = () => {
         <section className="py-10 md:py-20 bg-gray-50">
             <div className="container px-5 mx-auto flex flex-wrap">
                 <h2 className="mb-10 md:mb-16 text-4xl sm:text-5xl md:text-6xl cookie-regular font-normal leading-16 text-[#2f9457] text-center w-full">
-                Couple Weight Loss Diet Plan – Eat Healthy, Stay Strong Together
+                    Couple Weight Loss Diet Plan – Eat Healthy, Stay Strong Together
                 </h2>
                 <div className="flex flex-wrap shadow-lg rounded-2xl">
                     <div className="p-4 lg:w-1/2">
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                            <img 
-                                alt="women's nutrition" 
-                                className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" 
-                                src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                            <Image
+                                width={500}
+                                height={500}
+                                src="/nutiitionplan/couple.png"
+                                alt="women's nutrition"
+                                className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
                             />
                             <div className="flex-grow sm:pl-8">
                                 <h2 className="title-font font-medium text-2xl text-gray-900 mb-4">At Nittya – Your Daily Nutrition</h2>
                                 <p className="mb-4 text-lg">
-                                we offer simple and balanced diet plans for couples who want to get healthier together.
+                                    we offer simple and balanced diet plans for couples who want to get healthier together.
                                 </p>
                                 <div className="flex flex-col space-y-2">
                                     <div className="flex items-center">
@@ -37,9 +40,9 @@ const CoupleDietPlan = () => {
                                     </div>
                                 </div>
                                 <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                                <button className="mt-6 px-6 py-2 bg-[#2f9457] text-white rounded-lg hover:bg-[#247a46] transition-colors">
-                                    Start your journey today!
-                                </button>
+                                    <button className="mt-6 px-6 py-2 bg-[#2f9457] text-white rounded-lg hover:bg-[#247a46] transition-colors">
+                                        Start your journey today!
+                                    </button>
                                 </Link>
                             </div>
                         </div>

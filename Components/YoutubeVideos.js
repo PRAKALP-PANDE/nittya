@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const YoutubeVideos = () => {
@@ -76,9 +77,9 @@ const YoutubeVideos = () => {
             </div>
 
             <div className="text-center mt-16">
-                <button className="bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors shadow-md hover:shadow-lg">
+                <Link href="https://www.youtube.com/@NutritionWithVidya" className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-white transition-all duration-500 bg-gradient-to-r from-[#166534] to-[#2d9155] rounded-xl shadow-lg group hover:shadow-[0_10px_25px_-10px_rgba(45,145,85,0.4)] hover:translate-y-[-2px]">
                     View All Videos
-                </button>
+                </Link>
             </div>
         </div>
     );

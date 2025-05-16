@@ -8,13 +8,16 @@ import 'swiper/css/pagination';
 
 const images = [
   {
-    image: 'https://i.ibb.co/Tq06zHgW/feedback-img.jpg'
+    image: 'https://plus.unsplash.com/premium_photo-1661690177761-8d521bd794f9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
-    image: 'https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSS3819-02_1_b49d3d6e-ec9f-4cd4-8bad-341ccb80e946.jpg?v=1741094253&quality=50'
+    image: 'https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
-    image: 'https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MST2718-01_1_654d9bd5-9bbc-4d1d-909e-3d15c5d5f4ab.jpg?v=1739287341&quality=50'
+    image: 'https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
 ];
 
@@ -23,7 +26,7 @@ export default function Newhero() {
   const whatsappLink = `https://wa.me/9922015121?text=${message}`;
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#f0fdf4] via-[#ecfdf5] to-[#d1fae5] py-12 md:py-28 px-4">
+    <section className="relative overflow-hidden py-12 md:py-28 px-4">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-[#2d9155] mix-blend-multiply filter blur-3xl animate-float"></div>
@@ -122,7 +125,6 @@ export default function Newhero() {
               spaceBetween={30}
               slidesPerView={1}
               loop={true}
-              navigation
               pagination={{ clickable: true }}
               autoplay={{ delay: 1000, disableOnInteraction: false }}
             >

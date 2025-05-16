@@ -22,7 +22,7 @@ const Hero = () => {
             </Head>
 
             <section className="lg:h-screen flex justify-center items-center bg-gradient-to-b from-[#2d9155] to-[#2f9457]">
-                <div className="absolute inset-0 bg-gray-300 clip-wave"></div>
+                {/* <div className="absolute inset-0 bg-gray-300 clip-wave"></div> */}
                 <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 justify-center items-center">
                     {/* Text Content */}
                     <motion.div className="mr-auto place-self-center lg:col-span-7" initial="hidden" animate="visible" variants={textVariants}>

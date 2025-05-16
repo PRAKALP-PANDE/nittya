@@ -1,3 +1,4 @@
+import { GOOGLE_FORM_LINK } from '@/constants';
 import React from 'react';
 
 const Contact = () => {
@@ -100,7 +101,7 @@ const Contact = () => {
                             </div>
 
                             <a
-                                href="YOUR_GOOGLE_FORM_LINK"
+                                href={GOOGLE_FORM_LINK}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block w-full py-3 px-6 bg-gradient-to-r from-[#2d9155] to-[#4ade80] text-white rounded-xl font-semibold text-center shadow-lg hover:shadow-xl transition-all duration-300"

@@ -9,7 +9,7 @@ const CardHappyClient = () => {
                     <div className="absolute w-full bg-[#31985a] -z-10 md:h-96 rounded-2xl"></div>
 
                     <div className="w-full p-6 bg-[#31985a] md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
-                        <img className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl" src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="client photo" />
+                        <img className="h-20 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl" src="https://i.ibb.co/Tq06zHgW/feedback-img.jpg" alt="client photo" />
 
                         <div className="mt-2 md:mx-6">
                             <div>

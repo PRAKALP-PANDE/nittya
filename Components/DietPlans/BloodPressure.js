@@ -9,41 +9,41 @@ const BloodPressure = () => {
     const whatsappLink = `https://wa.me/9922015121?text=${message}`;
 
     return (
-        <section className="relative py-16 md:py-24">
+        <section className="relative py-8 md:py-12">
             {/* Decorative elements */}
             <div className="absolute inset-0 opacity-10 overflow-hidden">
                 <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-green-300 mix-blend-multiply filter blur-3xl"></div>
                 <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-green-200 mix-blend-multiply filter blur-3xl"></div>
             </div>
-            
+
             {/* Heart icon decoration */}
-            <svg 
+            <svg
                 className="absolute top-10 right-10 w-20 h-20 text-green-100 hidden md:block"
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
                 fill="currentColor"
             >
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
             </svg>
 
             <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#166534] to-[#2d9155]">
-                            Blood Pressure & Cholesterol
-                        </span>
-                        <br />
-                        Weight Loss Diet Plan
-                    </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Heart-Healthy Nutrition for Sustainable Results
-                    </p>
-                </div>
-
                 <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
                     <div className="flex flex-col lg:flex-row">
                         {/* Left side - Image and intro */}
                         <div className="lg:w-1/2 p-8 md:p-10">
+
+                            <div className="text-center mb-12">
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#166534] to-[#2d9155]">
+                                        Blood Pressure & Cholesterol
+                                    </span>
+                                    <br />
+                                    Weight Loss Diet Plan
+                                </h2>
+                                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                                    Heart-Healthy Nutrition for Sustainable Results
+                                </p>
+                            </div>
                             <div className="flex flex-col md:flex-row items-center gap-6">
                                 <div className="relative w-full md:w-48 h-48 flex-shrink-0 rounded-2xl overflow-hidden shadow-md">
                                     <Image

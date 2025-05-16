@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
     return (
         <div className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col border border-gray-100 hover:border-green-100">
             {/* Image with badges */}
-            <div className="relative w-full h-64 overflow-hidden">
+            <Link href={`/product/${slug}`} className="relative w-full h-64 overflow-hidden">
                 <img
                     src={images[0]}
                     alt={name}
@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
                         </span>
                     )}
                 </div>
-            </div>
+            </Link>
 
             {/* Product details */}
             <div className="p-5 flex flex-col justify-between flex-grow">
@@ -73,7 +73,7 @@ const ProductCard = ({ product }) => {
 
                 {/* Action buttons */}
                 <div className="mt-6 flex gap-3">
-                    <Link href={`/product/${slug}`} className="flex-1 py-2.5 text-sm font-semibold text-center bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-300 shadow-sm hover:shadow-md">
+                    <Link href={`/product/${slug}`} className="flex-1 py-2.5 text-sm text-center font-medium text-white transition-all duration-500 bg-gradient-to-r from-[#166534] to-[#2d9155] rounded-md shadow-lg group hover:shadow-[0_10px_25px_-10px_rgba(45,145,85,0.4)] hover:translate-y-[-2px]">
                         View Details
                     </Link>
                     <button className="p-2.5 border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center">

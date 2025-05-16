@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function HappyClients() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-white to-green-50">
+    <section id='happyCustomers' className="py-24 px-4 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 text-sm font-medium text-green-700 bg-green-100 rounded-full mb-4">
