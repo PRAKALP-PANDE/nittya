@@ -95,14 +95,11 @@ const Navbar = ({ user }) => {
           <Link href={'/#aboutUs'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">About Us</span>
           </Link>
-          <Link href={'/'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Products</span>
-          </Link>
           <Link href={'/nutritionplan'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Nutrition Plan</span>
           </Link>
           <Link href={'/shop'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Shop By Conditions</span>
+            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Products</span>
           </Link>
           <Link href={'/#happyCustomers'}>
             <span className="hover:text-green-600 transition duration-300 cursor-pointer">Happy Customers</span>
@@ -121,19 +118,30 @@ const Navbar = ({ user }) => {
 
       {/* Navbar for smaller devices */}
 
-      <div className={`flex md:hidden flex-col md:flex-row md:justify-start justify-center items-center py-4 shadow-lg sticky top-0 bg-white z-50 ${!sideMenu && 'overflow-hidden'} `}>
+      <div className={`flex md:hidden flex-col md:flex-row md:justify-start justify-center items-center py-3 shadow-md sticky top-0 bg-white z-50 ${!sideMenu && 'overflow-hidden'}`}>
+        {/* Hamburger Menu Button */}
         <div className="cursor-pointer menu absolute left-4 top-1/2 transform -translate-y-1/2 flex items-center">
-          <HiOutlineMenuAlt1 onClick={toggleMenu} className='text-3xl transition-transform hover:scale-110 active:scale-95 text-gray-700' />
+          <HiOutlineMenuAlt1
+            onClick={toggleMenu}
+            className='text-2xl transition-all hover:scale-110 active:scale-95 text-gray-700 hover:text-[#2d9155]'
+          />
         </div>
+
+        {/* Logo */}
         <nav className="w-full flex justify-center items-center">
-          <div className="logo mx-5 md:w-auto w-40 flex justify-center">
-            <Link href={'/'} className='text-5xl font-bold bg-gradient-to-r from-[#31985a] to-[#2b8a51] bg-clip-text text-transparent hover:from-gray-800 hover:to-gray-400 italic cookie-regular transition-all hover:scale-105'>Nittya</Link>
+          <div className="logo mx-5 md:w-auto w-32 flex justify-center">
+            <Link
+              href={'/'}
+              className='text-4xl font-bold bg-gradient-to-r from-[#2d9155] to-[#247a46] bg-clip-text text-transparent hover:from-gray-800 hover:to-gray-400 italic cookie-regular transition-all hover:scale-105'
+            >
+              Nittya
+            </Link>
           </div>
         </nav>
 
         {/* This is for Menu */}
 
-        <div ref={refMenu} className={`w-80 h-[100vh] z-30 menu overflow-y-scroll absolute top-0 bg-black px-8 py-10 transition-all ${sideMenu ? `left-0` : `-left-96`}`}>
+        <div ref={refMenu} className={`w-80 h-[100vh] z-30 menu overflow-y-scroll absolute top-0 bg-gradient-to-r from-[#166534] to-[#2d9155] px-2 py-10 transition-all ${sideMenu ? `left-0` : `-left-96`}`}>
           {/* <h2 className="font-bold text-3xl text-white">Log in</h2> */}
           <span className='absolute top-6 left-6 cursor-pointer text-5xl text-white hover:text-blue-300 cookie-regular'>
             Nittya
@@ -142,99 +150,80 @@ const Navbar = ({ user }) => {
             <VscClose />
           </span>
 
-          <div className="nav mt-20">
-            <ul className="space-y-6 font-semibold text-lg text-white">
+          <div className="nav mt-4 py-8">
+            {/* Navigation Links */}
+            <ul className="space-y-2 font-medium text-white">
               <li>
-                <Link href="/" className="block hover:text-green-400 transition-colors duration-200">
-                  Home
+                <Link onClick={toggleMenu} href="/" className="flex items-center py-3 px-4 hover:bg-white/10 rounded-xl transition-all duration-200 group">
+                  <span className="mr-3 w-1 h-6 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Home</span>
                 </Link>
               </li>
               <li>
-                <Link href="/newarrivals" className="block hover:text-green-400 transition-colors duration-200">
-                  New Arrivals
+                <Link onClick={toggleMenu} href="/#aboutUs" className="flex items-center py-3 px-4 hover:bg-white/10 rounded-xl transition-all duration-200 group">
+                  <span className="mr-3 w-1 h-6 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">About Us</span>
                 </Link>
               </li>
               <li>
-                <Link href="/bestselling" className="block hover:text-green-400 transition-colors duration-200">
-                  Best Selling
+                <Link onClick={toggleMenu} href="/nutritionplan" className="flex items-center py-3 px-4 hover:bg-white/10 rounded-xl transition-all duration-200 group">
+                  <span className="mr-3 w-1 h-6 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Nutrition Plan</span>
                 </Link>
               </li>
               <li>
-                <Link href="/" className="block hover:text-green-400 transition-colors duration-200">
-                  Plus
+                <Link onClick={toggleMenu} href="/shop" className="flex items-center py-3 px-4 hover:bg-white/10 rounded-xl transition-all duration-200 group">
+                  <span className="mr-3 w-1 h-6 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Products</span>
                 </Link>
               </li>
               <li>
-                <details className="overflow-hidden rounded [&_summary::-webkit-details-marker]:hidden">
-                  <summary className="flex cursor-pointer items-center justify-between gap-2 transition">
-                    <span className="block hover:text-green-400 transition-colors duration-200 text-lg"> Shop </span>
-                    <span className="transition group-open:-rotate-180">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <Dropdown title="Shirt" items={shirtItems} />
-                  <Dropdown title="T-Shirt" items={tshirtItems} />
-                  <Dropdown title="Trousers" items={trousersItems} />
-                  <Dropdown title="Jeans" items={jeansItems} />
-                  <Dropdown title="Winterwear" items={winterwearItems} />
-                  <Link href="/" className="mx-3 py-2 block hover:text-green-400 transition-colors duration-200">
-                    Joggers
-                  </Link>
-                  <Link href="/" className="mx-3 py-2 block hover:text-green-400 transition-colors duration-200">
-                    Shorts
-                  </Link>
-                </details>
-              </li>
-              <li>
-                <Link href="/" className="block hover:text-green-400 transition-colors duration-200">
-                  Snitch LUXE
+                <Link onClick={toggleMenu} href="/#happyCustomers" className="flex items-center py-3 px-4 hover:bg-white/10 rounded-xl transition-all duration-200 group">
+                  <span className="mr-3 w-1 h-6 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Happy Customers</span>
                 </Link>
               </li>
               <li>
-                <Link href="/" className="block hover:text-green-400 transition-colors duration-200">
-                  Snitch PLUS
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="block hover:text-green-400 transition-colors duration-200">
-                  Orders
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="block hover:text-green-400 transition-colors duration-200">
-                  Find A Store
+                <Link onClick={toggleMenu} href="/contact" className="flex items-center py-3 px-4 hover:bg-white/10 rounded-xl transition-all duration-200 group">
+                  <span className="mr-3 w-1 h-6 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Contact Us</span>
                 </Link>
               </li>
             </ul>
-            <div className="mt-10 -mx-3">
-              <button
-                className="w-16 inline-flex items-center px-3 py-2 justify-center m-2 bg-gray-200 hover:bg-gray-300 text-pink-800 font-medium text-2xl rounded-md">
-                <IoLogoInstagram />
-              </button>
-              <button
-                className="w-16 inline-flex items-center px-3 py-2 justify-center m-2 bg-gray-200 hover:bg-gray-300 text-blue-800 font-medium text-2xl rounded-md">
-                <IoLogoFacebook />
-              </button>
-              <button
-                className="w-16 inline-flex items-center px-3 py-2 justify-center m-2 bg-gray-200 hover:bg-gray-300 text-red-800 font-medium text-2xl rounded-md">
-                <IoLogoYoutube />
-              </button>
+
+            {/* Social Media Links */}
+            <div className="mt-12 px-8">
+              <h3 className="text-white/80 text-sm font-medium mb-4 px-4">Connect With Us</h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                  <IoLogoInstagram className="text-white text-2xl" />
+                </a>
+                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                  <IoLogoFacebook className="text-white text-2xl" />
+                </a>
+                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                  <IoLogoYoutube className="text-white text-2xl" />
+                </a>
+                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                  <IoLogoTwitter className="text-white text-2xl" />
+                </a>
+                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                  <IoLogoPinterest className="text-white text-2xl" />
+                </a>
+                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                  <IoLogoLinkedin className="text-white text-2xl" />
+                </a>
+              </div>
             </div>
-            <div className="-mx-3">
-              <button
-                className="w-16 inline-flex items-center px-3 py-2 justify-center m-2 bg-gray-200 hover:bg-gray-300 text-blue-800 font-medium text-2xl rounded-md">
-                <IoLogoTwitter />
-              </button>
-              <button
-                className="w-16 inline-flex items-center px-3 py-2 justify-center m-2 bg-gray-200 hover:bg-gray-300 text-red-800 font-medium text-2xl rounded-md">
-                <IoLogoPinterest />
-              </button>
-              <button
-                className="w-16 inline-flex items-center px-3 py-2 justify-center m-2 bg-gray-200 hover:bg-gray-300 text-blue-800 font-medium text-2xl rounded-md">
-                <IoLogoLinkedin />
-              </button>
+
+            {/* Call to Action */}
+            <div className="mt-10 px-4">
+              <Link
+                href="/contact"
+                className="block w-full py-3 px-6 bg-white text-[#2d9155] font-semibold rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                Book Consultation
+              </Link>
             </div>
           </div>
         </div>
