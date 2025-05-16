@@ -1,25 +1,56 @@
-import { useState } from 'react';
+import { Apple, AppleIcon } from 'lucide-react';
+import React, { useState } from 'react';
 
 const faqData = [
     {
-        question: "What is the role of a nutritionist?",
+        question: "What type of diet plans do you offer?",
         answer:
-            "A nutritionist provides expert advice on matters related to food and nutrition, helping you achieve health goals, manage chronic conditions, and improve overall well-being.",
+            "We provide homemade vegetarian, Maharashtrian, and Indian meals with daily variety. No fad diets like daily chicken or soy are included—our meals are always balanced and nutritious.",
     },
     {
-        question: "How often should I see a nutritionist?",
+        question: "Can non-veg be included?",
         answer:
-            "It depends on your goals. For general health advice, a few visits might be enough. However, if you have specific health conditions, frequent visits might be necessary.",
+            "Our standard plans are vegetarian, but separate non-veg options are available.",
     },
     {
-        question: "What should I expect during my first consultation?",
+        question: "Do you recommend supplements?",
         answer:
-            "Your nutritionist will assess your health history, eating habits, lifestyle, and any medical conditions. They will then create a personalized plan to meet your health goals.",
+            "No, we do not suggest supplements, powders, or ready-made products (e.g., Herbalife).",
     },
     {
-        question: "Can a nutritionist help with weight loss?",
+        question: "Are the meals raw or boiled?",
         answer:
-            "Yes, a nutritionist can help with safe and sustainable weight loss by providing guidance on diet, exercise, and healthy habits tailored to your specific needs.",
+            "No, our plans include complete balanced meals—roti, rice, sabji, etc.",
+    },
+    {
+        question: "What makes your diet special?",
+        answer:
+            "We specialize in women-centric diet plans but offer plans for men too. Along with weight loss, we focus on: \n • PCOS/PCOD, hormonal balance \n • Iron, calcium, hemoglobin levels \n • Skin & hair health (Vitamin A, C, E) \n • Thyroid, diabetes, BP, joint pain, cholesterol \n Plans: ₹1500/- (4 weeks) | ₹3999/- (3 months).",
+    },
+    {
+        question: "How does it work?",
+        answer:
+            "Weekly grocery list provided in advance. \n Daily check-in via WhatsApp—weight tracking & adjustments.",
+    },
+    {
+        question: "What exercise is required?",
+        answer:
+            "30 min morning activity + 30 min night walk (compulsory).",
+    },
+    {
+        question: "Do I need to measure food portions?",
+        answer:
+            "No, eat as per your appetite.",
+    },
+    {
+        question: "How much weight can I lose?",
+        answer:
+            "On average, 4 kg/month (varies from 2-5 kg).",
+    },
+    {
+        question: "How to enroll?",
+        answer:
+            "1. Limited slots open every Monday. \n2. Payment by Saturday before enrollment. \n3. Receive a grocery list & YouTube video for guidance.",
     },
 ];
 
@@ -31,10 +62,10 @@ const FaqSection = () => {
     };
 
     return (
-        <div className="relative py-16 px-6 sm:px-10 lg:px-20 rounded-lg shadow-xl overflow-hidden">
+        <div className="relative py-16 px-6 sm:px-10 lg:px-20 rounded-lg shadow-md overflow-hidden">
             {/* Decorative Images */}
-            <img src="https://www.shutterstock.com/image-photo/world-best-exotic-fruit-platter-260nw-2490229919.jpg" alt="fruit" className="absolute top-4 left-4 w-20 opacity-30 rotate-12" />
-            <img src="https://marleyspoon.com/media/recipes/85013/main_photos/large/vegie-398b78339b89602cf740f52d2a54b6aa.jpeg" alt="veggie" className="absolute bottom-4 right-4 w-24 opacity-30 rotate-[-12deg]" />
+            <AppleIcon color="red" size={48} alt="fruit" className="absolute top-4 left-4 w-20 opacity-30 rotate-12" />
+            <img src="/homepage/vegie.jpg" alt="veggie" className="absolute bottom-4 right-4 w-24 opacity-30 rotate-[-12deg] bg-blend-color-burn" />
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzw7A-G0lFW-jm9X782tVRexVdfol64vuNnA&s" alt="leaf" className="absolute top-1/2 right-10 w-16 opacity-20 hidden md:block" />
 
             <div className="relative z-10 max-w-4xl mx-auto">
@@ -57,12 +88,16 @@ const FaqSection = () => {
                                 </span>
                             </button>
                             <div
-                                className={`mt-3 overflow-hidden transition-all duration-500 ease-in-out ${
-                                    open === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
-                                }`}
+                                className={`mt-3 overflow-hidden transition-all duration-500 ease-in-out ${open === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
+                                    }`}
                             >
                                 <p className="text-gray-700 text-base leading-relaxed">
-                                    {faq.answer}
+                                    {faq.answer.split('\n').map((line, i) => (
+                                        <React.Fragment key={i}>
+                                            {line}
+                                            <br />
+                                        </React.Fragment>
+                                    ))}
                                 </p>
                             </div>
                         </div>
