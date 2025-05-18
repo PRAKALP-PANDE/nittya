@@ -456,6 +456,8 @@ const productsList = [
             }
         ]
     }
-]
+];
 
-export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss, whatsappMessage };
+const GOOGLE_FORM_LINK = "https://forms.gle/eCSGwU3L3EY9AKKP7"
+
+export { productsList, nutritionPlans, fitnessAndLifestyle, detoxAndWeightLoss, whatsappMessage, GOOGLE_FORM_LINK };
