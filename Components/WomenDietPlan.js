@@ -63,11 +63,11 @@ const WomenDietPlan = () => {
                         <div className="mt-6 space-y-4">
                             <div className="flex items-center justify-between p-4 bg-green-50 rounded-xl">
                                 <span className="font-medium">4 Weeks Plan</span>
-                                <span className="font-bold text-[#166534]">₹1,499</span>
+                                <span className="font-bold text-[#166534]">₹1,799</span>
                             </div>
                             <div className="flex items-center justify-between p-4 bg-green-50 rounded-xl">
                                 <span className="font-medium">3 Months (13 Weeks) Plan</span>
-                                <span className="font-bold text-[#166534]">₹3,999</span>
+                                <span className="font-bold text-[#166534]">₹4,499</span>
                             </div>
                         </div>
 
