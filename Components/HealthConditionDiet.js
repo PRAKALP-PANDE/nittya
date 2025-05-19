@@ -1,5 +1,5 @@
-import React from 'react'
-import Diabetes from './DietPlans/Diabetes'
+import React from 'react';
+import Diabetes from './DietPlans/Diabetes';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -12,50 +12,58 @@ import PostNatal from './DietPlans/PostNatal';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const HealthConditionDiet = () => {
-
     const CustomPrevArrow = ({ onClick }) => (
-        <button onClick={onClick} className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 bg-transparent p-3 transition-all">
-            <FaChevronLeft size={35} />
+        <button
+            onClick={onClick}
+            className="z-10 absolute left-2 md:left-[-40px] top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2 md:p-3 text-[#2f9457] hover:bg-[#2f9457] hover:text-white transition-all"
+        >
+            <FaChevronLeft size={20} />
         </button>
     );
 
     const CustomNextArrow = ({ onClick }) => (
-        <button onClick={onClick} className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 bg-transparent p-3 transition-all">
-            <FaChevronRight size={35} />
+        <button
+            onClick={onClick}
+            className="z-10 absolute right-2 md:right-[-40px] top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2 md:p-3 text-[#2f9457] hover:bg-[#2f9457] hover:text-white transition-all"
+        >
+            <FaChevronRight size={20} />
         </button>
     );
+
     const settings = {
         dots: true,
         infinite: true,
         arrows: true,
         speed: 500,
-        slidesToShow: 1, // Number of slides to show at a time
-        slidesToScroll: 1, // Number of slides to scroll on navigation
+        slidesToShow: 1,
+        slidesToScroll: 1,
         prevArrow: <CustomPrevArrow />,
         nextArrow: <CustomNextArrow />,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
-                },
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
+                    arrows: true,
                 },
             },
         ],
     };
 
     return (
-        <section className="py-5 md:py-10 bg-gray-100">
-            <div className="container px-5 mx-auto flex flex-wrap">
-                <h2 className="mb-10 md:mb-16 text-4xl sm:text-5xl md:text-6xl cookie-regular font-normal leading-16 text-[#2f9457] text-center w-full">
-                    Diet Plans According To Health Conditions
-                </h2>
-                <div className="w-full px-5">
+        <section className="py-10 bg-gray-100">
+            <div className="container mx-auto px- sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#166534] to-[#2d9155]">
+                            Diet Plans According
+                        </span><br />
+                        <span className="text-gray-800">To Your Health Conditions</span>
+                    </h2>
+                    <p className="text-3xl text-gray-600 max-w-3xl mx-auto cookie-regular">
+                        Scientifically designed nutrition plans tailored to your specific health needs
+                    </p>
+                </div>
+                <div className="relative">
                     <Slider {...settings}>
                         <Diabetes />
                         <BloodPressure />
@@ -68,7 +76,7 @@ const HealthConditionDiet = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default HealthConditionDiet
+export default HealthConditionDiet;
