@@ -5,42 +5,47 @@ const YoutubeVideos = () => {
     // Video data array for easier management
     const videos = [
         {
-            id: 'DpHebYSOu-8',
+            id: 'aSr6fXhYVi0',
             title: 'Introduction to React Hooks',
             description: 'Learn how to use React Hooks in your applications'
         },
         {
-            id: '0wgpVhGYttY',
+            id: 'pPM4tTKTnFQ',
             title: 'Advanced CSS Techniques',
             description: 'Modern CSS patterns for better UI development'
         },
         {
-            id: 'GbLcsgd_TsI',
+            id: 'Bi14fxOziVM',
             title: 'UI/UX Design Principles',
             description: 'Essential design principles for developers'
         },
         {
-            id: 'FagOp3KHHDg',
+            id: 'MNficUbYjZg',
             title: 'TypeScript for Beginners',
             description: 'Getting started with TypeScript in your projects'
         },
         {
-            id: 'ub2-Zql11Lg',
+            id: 'q4c7t_Couas',
             title: 'Next.js Crash Course',
             description: 'Build modern web apps with Next.js'
         },
         {
-            id: 'pPM4tTKTnFQ',
+            id: 'Gs81JhSpqHs',
             title: 'UI/UX Design Principles',
             description: 'Essential design principles for developers'
         },
         {
-            id: 'jPsnc0m9xuo',
+            id: 'RdCZDpPX7-U',
             title: 'UI/UX Design Principles',
             description: 'Essential design principles for developers'
         },
         {
-            id: '8Z2_o-6Q03k',
+            id: 'RjXzVchtdDE',
+            title: 'UI/UX Design Principles',
+            description: 'Essential design principles for developers'
+        },
+        {
+            id: '8g2gb_SEH5o',
             title: 'State Management in 2023',
             description: 'Comparing Redux, Context, and Zustand'
         }
@@ -53,7 +58,7 @@ const YoutubeVideos = () => {
                     Featured <span className="text-[#2d9155]">Videos</span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Watch our latest tutorials and learn from industry experts
+                    Subscribe for healthy lifestyle tips and recipes
                 </p>
             </div>
 

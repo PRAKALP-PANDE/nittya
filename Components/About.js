@@ -77,7 +77,7 @@ const About = () => {
 
                         <div className="space-y-5 text-gray-700">
                             <p className="text-lg leading-relaxed">
-                                At <span className="font-semibold text-[#2d9155]">Nittya Nutrition</span>, we revolutionize women's health through <span className="font-semibold text-gray-900">science-backed, personalized nutrition</span> that harmonizes with your lifestyle while addressing <span className="font-semibold text-gray-900">hormonal balance, weight management, and nutrient deficiencies</span>.
+                                At <span className="font-semibold text-[#2d9155]">Nittya Nutrition</span>, we revolutionize women's health through <span className="font-semibold text-gray-900">science-backed nutrition</span> that harmonizes with your lifestyle while addressing <span className="font-semibold text-gray-900">hormonal balance, weight management, and nutrient deficiencies</span>.
                             </p>
 
                             <div className="p-5 bg-white rounded-xl shadow-sm border border-gray-100">
@@ -94,8 +94,8 @@ const About = () => {
                                         'Women\'s Nuts & Seeds Blend',
                                         'Sugar-Free Laddoos',
                                         'Daily Superfood Seed Mix',
-                                        'Hormone Balance Tea',
-                                        'Gut Health Prebiotic'
+                                        'Dink Dryfruit Laddoo',
+                                        'Sprouted Ragi Energy Balls'
                                     ].map((product, index) => (
                                         <li key={index} className="flex items-start">
                                             <svg className="w-5 h-5 mr-2 text-[#2d9155] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

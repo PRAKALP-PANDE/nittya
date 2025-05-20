@@ -34,7 +34,7 @@ const PostNatal = () => {
                                     <Image
                                         width={500}
                                         height={500}
-                                        src="/nutiitionplan/pregnancy.png"
+                                        src="/nutiitionplan/post_natal.png"
                                         alt="Heart-healthy nutrition"
                                         className="w-full h-full object-cover"
                                     />
