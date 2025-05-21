@@ -2,16 +2,13 @@ import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { VscClose } from "react-icons/vsc";
-import { LuUser } from "react-icons/lu";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube, IoLogoTwitter, IoLogoPinterest, IoLogoLinkedin } from "react-icons/io5";
-import Dropdown from './Dropdown';
 import { useRouter } from 'next/router';
+import { GOOGLE_FORM_LINK } from '@/constants';
 
 
 const Navbar = ({ user }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [dropdown, setDropdown] = useState(false)
-  const [sideCart, setSideCart] = useState(false)
   const [sideMenu, setSideMenu] = useState(false)
 
   const [navbar, setNavbar] = useState(false);
@@ -31,45 +28,6 @@ const Navbar = ({ user }) => {
     return () => window.removeEventListener('scroll', changeBackground);
   }, []);
 
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
-  const shirtItems = [
-    { label: 'Plain', href: '/' },
-    { label: 'Stripes', href: '/' },
-    { label: 'Checks', href: '/' },
-    { label: 'Printed', href: '/' },
-    { label: 'Linen', href: '/' },
-    // Add more services here
-  ];
-
-  const tshirtItems = [
-    { label: 'Basic', href: '/shop/shirts' },
-    { label: 'Oversized', href: '/shop/shirts' },
-    { label: 'Polo', href: '/shop/tshirts' },
-  ];
-
-  const trousersItems = [
-    { label: 'Chino', href: '/' },
-    { label: 'Formal', href: '/' },
-    { label: 'Korean', href: '/' },
-    { label: 'Linen', href: '/' }
-  ];
-
-  const jeansItems = [
-    { label: 'Straight', href: '/' },
-    { label: 'Slim', href: '/' },
-  ];
-
-  const winterwearItems = [
-    { label: 'Hoodies', href: '/' },
-    { label: 'Jackets', href: '/' },
-    { label: 'Sweaters', href: '/' },
-    { label: 'Sweatshirts', href: '/' }
-  ];
-
   const toggleMenu = () => {
     setSideMenu(!sideMenu)
   }
@@ -79,41 +37,66 @@ const Navbar = ({ user }) => {
     <>
       {/* Navbar for medium devices */}
       <div
-        className={`hidden fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar ? 'bg-white text-black shadow-lg' : `${isHome ? 'bg-transparent text-green-900' : 'bg-white text-black'}`
+        className={`hidden fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar
+          ? 'bg-white text-black shadow-lg'
+          : `${isHome ? 'bg-transparent text-white' : 'bg-white text-black'}`
           }`}
       >
         {/* Logo */}
         <div className="logo">
-          <Link href={'/'} className="max-w-2xl mb-4 text-5xl cookie-regular font-normal tracking-wider leading-tight text-green-950 bg-white py-10 px-4 rounded-b-3xl items-center shadow-lg">Nittya</Link>
+          <Link
+            href={'/'}
+            className={`text-4xl font-bold tracking-wider leading-tight transition-all duration-300 ${navbar || !isHome
+              ? 'text-[#2d9155] hover:text-[#1a6938]'
+              : 'text-[#2d9155] hover:text-[#1a6938]'
+              } cookie-regular`}
+          >
+            Nittya
+          </Link>
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-8 font-semibold">
-          <Link href={'/'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Home</span>
-          </Link>
-          <Link href={'/#aboutUs'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">About Us</span>
-          </Link>
-          <Link href={'/nutritionplan'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Nutrition Plan</span>
-          </Link>
-          <Link href={'/shop'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Products</span>
-          </Link>
-          <Link href={'/#happyCustomers'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Happy Customers</span>
-          </Link>
-          <Link href={'/contact'}>
-            <span className="hover:text-green-600 transition duration-300 cursor-pointer">Contact Us</span>
-          </Link>
+        <nav className="hidden md:flex space-x-8">
+          {[
+            { href: '/', label: 'Home' },
+            { href: '/#aboutUs', label: 'About Us' },
+            { href: '/nutritionplan', label: 'Nutrition Plan' },
+            { href: '/shop', label: 'Products' },
+            { href: '/#happyCustomers', label: 'Happy Customers' },
+            { href: '/contact', label: 'Contact Us' }
+          ].map((item, index) => (
+            <Link key={index} href={item.href}>
+              <span className={`
+          relative py-2 px-1 font-medium transition-all duration-300
+          ${navbar || !isHome
+                  ? 'text-gray-800 hover:text-[#2d9155]'
+                  : 'text-[#2d9155] hover:text-gray-800'
+                }
+          after:content-[''] after:absolute after:bottom-0 after:left-0 
+          after:w-0 after:h-0.5 after:bg-[#2d9155] after:transition-all after:duration-300
+          hover:after:w-full
+        `}>
+                {item.label}
+              </span>
+            </Link>
+          ))}
         </nav>
 
-        {/* Icons (Account, Cart) */}
+        {/* Call to Action Button */}
         <div className="flex items-center space-x-6">
-          <Link href="/contact" className="text-xl hover:text-green-600 transition duration-300 cursor-pointer">ToDo</Link>
+          <Link
+            href="/contact"
+            className={`
+        py-2 px-6 rounded-full font-semibold transition-all duration-300
+        ${navbar || !isHome
+                ? 'bg-[#2d9155] text-white hover:bg-[#1a6938] hover:shadow-md'
+                : 'bg-white text-[#2d9155] hover:bg-gray-100 hover:shadow-md'
+              }
+      `}
+          >
+            Book Consultation
+          </Link>
         </div>
-
       </div>
 
       {/* Navbar for smaller devices */}
@@ -218,12 +201,26 @@ const Navbar = ({ user }) => {
 
             {/* Call to Action */}
             <div className="mt-10 px-4">
-              <Link
-                href="/contact"
-                className="block w-full py-3 px-6 bg-white text-[#2d9155] font-semibold rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300"
-              >
-                Book Consultation
-              </Link>
+              {!user?.value && (
+                <Link
+                  href={GOOGLE_FORM_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-3 px-6 bg-white text-[#2d9155] font-semibold rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  Book Consultation
+                </Link>
+              )}
+              {user?.value && (
+                <Link
+                  href="/admin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-3 px-6 bg-white text-[#2d9155] font-semibold rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  Hello Admin
+                </Link>
+              )}
             </div>
           </div>
         </div>
