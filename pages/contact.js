@@ -18,7 +18,7 @@ const Contact = () => {
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Connect with us for personalized nutrition guidance and support
+                        Connect with us for nutrition guidance and support
                     </p>
                 </div>
 
@@ -67,10 +67,10 @@ const Contact = () => {
                                         Contact Info
                                     </h3>
                                     <p className="text-sm lg:text-base text-gray-700 mb-2">
-                                        <a href="tel:+919922015121" className="hover:text-[#2d9155] transition-colors">+91 99220 15121</a>
+                                        <a href="tel:+919172683827" className="hover:text-[#2d9155] transition-colors">+91 91726 83827</a>
                                     </p>
                                     <p className="text-sm lg:text-base text-gray-700">
-                                        <a href="mailto:info@nittyanutrition.com" className="hover:text-[#2d9155] transition-colors">info@nittyanutrition.com</a>
+                                        <a href="mailto:nittya.yourdailynutrition@gmail.com" className="hover:text-[#2d9155] transition-colors">nittya.yourdailynutrition@gmail.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                     <div className="lg:w-1/3 bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
                         <div className="text-center mb-6">
                             <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to Begin Your Journey?</h3>
-                            <p className="text-gray-600">Complete our enrollment form to get started with personalized nutrition</p>
+                            <p className="text-gray-600">Complete our enrollment form to get started with nutrition</p>
                         </div>
 
                         <div className="space-y-6">
