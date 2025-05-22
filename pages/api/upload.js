@@ -1,5 +1,7 @@
 // pages/api/upload.js
 import { v2 as cloudinary } from 'cloudinary';
+import formidable from 'formidable';
+import fs from 'fs';
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -18,26 +20,39 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  try {
-    const data = await new Promise((resolve, reject) => {
-      const chunks = [];
-      req.on('data', (chunk) => chunks.push(chunk));
-      req.on('end', () => resolve(Buffer.concat(chunks)));
-      req.on('error', reject);
-    });
+  const form = formidable();
 
-    const result = await new Promise((resolve, reject) => {
-      cloudinary.uploader
-        .upload_stream({ resource_type: 'auto' }, (error, result) => {
-          if (error) reject(error);
-          else resolve(result);
-        })
-        .end(data);
-    });
+  form.parse(req, async (err, fields, files) => {
+    if (err) {
+      console.error('Form parsing error:', err);
+      return res.status(500).json({ message: 'Error parsing form data' });
+    }
 
-    res.status(200).json(result);
-  } catch (error) {
-    console.error('Upload error:', error);
-    res.status(500).json({ message: 'Error uploading image', error: error.message });
-  }
+    console.log('FILES:', files);
+
+    const file = files.file?.[0];
+
+    if (!file || !file.filepath) {
+      return res.status(400).json({ message: 'No file uploaded or invalid structure' });
+    }
+
+    try {
+      const result = await new Promise((resolve, reject) => {
+        const stream = fs.createReadStream(file.filepath);
+        const uploadStream = cloudinary.uploader.upload_stream(
+          { resource_type: 'image' },
+          (error, result) => {
+            if (error) reject(error);
+            else resolve(result);
+          }
+        );
+        stream.pipe(uploadStream);
+      });
+
+      return res.status(200).json(result);
+    } catch (error) {
+      console.error('Cloudinary upload error:', error);
+      return res.status(500).json({ message: 'Upload failed', error: error.message });
+    }
+  });
 }
