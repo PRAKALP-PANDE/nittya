@@ -37,7 +37,7 @@ const Navbar = ({ user }) => {
     <>
       {/* Navbar for medium devices */}
       <div
-        className={`hidden fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar
+        className={`hidden top-0 fixed w-full md:flex flex-col md:flex-row md:justify-between items-center py-1 px-6 z-50 transition-all duration-300 ${navbar
           ? 'bg-white text-black shadow-lg'
           : `${isHome ? 'bg-transparent text-white' : 'bg-white text-black'}`
           }`}
@@ -84,18 +84,32 @@ const Navbar = ({ user }) => {
 
         {/* Call to Action Button */}
         <div className="flex items-center space-x-6">
-          <Link
-            href="/contact"
-            className={`
-        py-2 px-6 rounded-full font-semibold transition-all duration-300
+          {!user?.value ? (
+            <Link
+              href="/contact"
+              className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 
         ${navbar || !isHome
-                ? 'bg-[#2d9155] text-white hover:bg-[#1a6938] hover:shadow-md'
-                : 'bg-white text-[#2d9155] hover:bg-gray-100 hover:shadow-md'
-              }
+                  ? 'bg-[#2d9155] text-white hover:bg-[#1a6938] hover:shadow-md'
+                  : 'bg-white text-[#2d9155] hover:bg-gray-100 hover:shadow-md'}
       `}
-          >
-            Book Consultation
-          </Link>
+            >
+              Book Consultation
+            </Link>
+          ) : (
+            <Link
+              href="/nittyaadmin"
+              className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 
+        ${navbar || !isHome
+                  ? 'bg-[#2d9155] text-white hover:bg-[#1a6938] hover:shadow-md'
+                  : 'bg-white text-[#2d9155] hover:bg-gray-100 hover:shadow-md'}
+      `}
+            >
+              <span className="mr-2">Hello</span>
+              <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-bold shadow-inner backdrop-blur-sm">
+                {user.name}
+              </span>
+            </Link>
+          )}
         </div>
       </div>
 
