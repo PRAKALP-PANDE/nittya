@@ -8,6 +8,7 @@ const AddUser = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [isAdmin, setIsAdmin] = useState('')
   const [loading, setLoading] = useState(false); // Loading state to disable submit button while processing
   const router = useRouter();
 
@@ -27,12 +28,15 @@ const AddUser = () => {
     else if (e.target.name == 'password') {
       setPassword(e.target.value)
     }
+    else if (e.target.name == 'isAdmin') {
+      setIsAdmin(e.target.value)
+    }
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const data = { name, email, password }
+    const data = { name, email, password, isAdmin }
     setLoading(true); // Set loading to true when form is submitted
 
     try {
@@ -50,6 +54,7 @@ const AddUser = () => {
         setEmail('')
         setName('')
         setPassword('')
+        setIsAdmin('')
         toast.success('New User has been created.', {
           position: "top-center",
           autoClose: 5000,
@@ -118,7 +123,7 @@ const AddUser = () => {
           <form onSubmit={handleSubmit} action="#" method="POST" className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                New User Full Name
+                New User Full Name <span className="text-red-500">*</span>
               </label>
               <div className="mt-1 relative rounded-md shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -133,8 +138,25 @@ const AddUser = () => {
             </div>
 
             <div>
+              <label htmlFor="isAdmin" className="block text-sm font-medium text-gray-700 mb-1">
+                Grant Admin Access to user?
+              </label>
+              <select
+                id="isAdmin"
+                name="isAdmin"
+                value={isAdmin}
+                onChange={handleChange}
+                className="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2d9155] focus:border-[#2d9155] transition duration-200"
+              >
+                <option value="">Select an option</option>
+                <option value="true">Yes, Grant Admin Access</option>
+                <option value="false">No, Normal User</option>
+              </select>
+            </div>
+
+            <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                Email Address
+                Email Address <span className="text-red-500">*</span>
               </label>
               <div className="mt-1 relative rounded-md shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -151,7 +173,7 @@ const AddUser = () => {
             <div>
               <div className="flex items-center justify-between mb-1">
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                  Password
+                  Password <span className="text-red-500">*</span>
                 </label>
               </div>
               <div className="mt-1 relative rounded-md shadow-sm">
