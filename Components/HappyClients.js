@@ -1,34 +1,25 @@
 // components/TestimonialCarousel.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Link from 'next/link';
+import axios from 'axios';
 
-const testimonials = [
-  {
-    name: 'Sarah Johnson',
-    image: 'https://i.ibb.co/Tq06zHgW/feedback-img.jpg',
-    role: 'Oct 10, 2024',
-    content: "Following this nutrition plan was the best decision I've made. I feel more confident and energized every single day.",
-  },
-  {
-    name: 'Michael Lee',
-    image: 'https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSS3819-02_1_b49d3d6e-ec9f-4cd4-8bad-341ccb80e946.jpg?v=1741094253&quality=50',
-    role: 'Fitness Enthusiast',
-    content: "I didn't just lose weight — I gained a whole new lifestyle. The guidance was practical and sustainable.",
-  },
-  {
-    name: 'Emily Carter',
-    image: 'https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MST2718-01_1_654d9bd5-9bbc-4d1d-909e-3d15c5d5f4ab.jpg?v=1739287341&quality=50',
-    role: 'Wellness Coach',
-    content: "It was incredible to see the difference in just a few months. I feel like the best version of myself.",
-  },
-];
+const HappyClients = () => {
+  const [reviews, setReviews] = useState([]);
 
-export default function HappyClients() {
+  const fetchReviews = async () => {
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/get-top-reviews`); // Replace with your API endpoint
+    setReviews(res.data.reviews);
+  };
+
+  useEffect(() => {
+    fetchReviews();
+  }, []);
+
   return (
     <section id='happyCustomers' className="py-24 px-4 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-7xl mx-auto">
@@ -54,20 +45,20 @@ export default function HappyClients() {
           pagination={{ clickable: true }}
           autoplay={{ delay: 1000, disableOnInteraction: false }}
         >
-          {testimonials.map((t, i) => (
+          {reviews.map((item, i) => (
             <SwiperSlide key={i}>
-              <div className="flex flex-col md:flex-row items-center bg-white p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
+              <div className="flex flex-col md:flex-row items-center bg-white p-8 rounded-2xl shadow-lg max-w-6xl mx-auto">
                 <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
                   <img
-                    src={t.image}
-                    alt={`${t.name} transformation`}
+                    src={item.image}
+                    alt={`${item.name} transformation`}
                     className="max-h-[300px] object-contain rounded-lg"
                   />
                 </div>
                 <div className="md:w-1/2 md:pl-10 text-center md:text-left">
-                  <h3 className="text-xl font-bold text-gray-800">{t.name}</h3>
-                  <p className="text-sm text-gray-500">{t.role}</p>
-                  <p className="mt-4 text-gray-700 italic">"{t.content}"</p>
+                  <h3 className="text-xl font-bold text-gray-800">{item.name}</h3>
+                  <p className="text-sm text-gray-500">{item.date}</p>
+                  <p className="mt-4 text-gray-700 italic">"{item.content}"</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -81,4 +72,6 @@ export default function HappyClients() {
       </div>
     </section>
   );
-}
+};
+
+export default HappyClients;
