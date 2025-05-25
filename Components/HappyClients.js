@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 
 const testimonials = [
   {
@@ -72,6 +73,11 @@ export default function HappyClients() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div className="text-center mt-16">
+        <Link href="/reviews" className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-white transition-all duration-500 bg-gradient-to-r from-[#166534] to-[#2d9155] rounded-xl shadow-lg group hover:shadow-[0_10px_25px_-10px_rgba(45,145,85,0.4)] hover:translate-y-[-2px]">
+          View All
+        </Link>
       </div>
     </section>
   );
