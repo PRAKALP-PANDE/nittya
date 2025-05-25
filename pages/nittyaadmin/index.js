@@ -144,7 +144,7 @@ export default function Index() {
         <main className="md:w-3/4 flex-1">
           <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
             {/* Content Header */}
-            <div className="p-5 border-b border-gray-100">
+            <div className="p-5 border-b border-gray-100 md:hidden">
               <h1 className="text-2xl font-bold text-gray-800">
                 {menuItems.find(item => item.key === activeSection)?.label}
               </h1>

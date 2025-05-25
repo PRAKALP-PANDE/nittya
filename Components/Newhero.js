@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Head from 'next/head';
 
 const images = [
   {
@@ -27,21 +28,15 @@ export default function Newhero() {
 
   return (
     <section className="relative overflow-hidden py-12 md:py-28 px-4">
+      <Head>
+        <title>Nittya.com - Your Daily Nutrition</title>
+        <meta name="description" content="Nittya: Your Daily Nutrition" />
+      </Head>
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-[#2d9155] mix-blend-multiply filter blur-3xl animate-float"></div>
         <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#4ade80] mix-blend-multiply filter blur-3xl animate-float-delay"></div>
       </div>
-
-      {/* Leaf decorations */}
-      <svg
-        className="absolute top-10 left-10 w-20 h-20 text-[#2d9155] opacity-10 hidden md:block"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-      >
-        <path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.522 4.82 3.889 6.115-.111.481-.176 1.092-.176 1.769 0 1.692.538 2.872 1.423 3.663.707.627 1.67.971 2.764.971 1.931 0 3.5-1.569 3.5-3.5 0-.774-.298-1.481-.781-2.022.482-.439.781-1.05.781-1.728 0-1.173-.795-2.151-1.876-2.42.01-.069.016-.14.016-.212C12 6.485 16 3 12 3zm6 10c0 2.21-1.343 4-3 4s-3-1.79-3-4 1.343-4 3-4 3 1.79 3 4z" />
-      </svg>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-16">
@@ -104,7 +99,7 @@ export default function Newhero() {
               </div>
               <div>
                 <p className="text-sm text-gray-600">
-                  Trusted by <span className="font-semibold text-[#166534]">10,000+</span> clients
+                  Trusted by <span className="font-semibold text-[#166534]">3,000+</span> clients
                 </p>
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (

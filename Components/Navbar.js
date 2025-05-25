@@ -105,7 +105,7 @@ const Navbar = ({ user }) => {
       `}
             >
               <span className="mr-2">Hello</span>
-              <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-bold shadow-inner backdrop-blur-sm">
+              <span className="bg-white/20 px-3 py-1 rounded-full text-lg font-bold shadow-inner backdrop-blur-sm cookie-regular">
                 {user.name}
               </span>
             </Link>
