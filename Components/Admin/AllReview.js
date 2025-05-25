@@ -127,7 +127,7 @@ const AllReview = () => {
 
         <div className="relative w-full sm:w-64">
           <label htmlFor="Search" className="sr-only">Search</label>
-          <input onChange={handleSearchInputChange} value={query} type="text" id="Search" placeholder="Search for..."
+          <input onChange={handleSearchInputChange} value={query} type="text" id="Search" placeholder="Search for Name or Review..."
             className="w-full rounded-lg border border-[#1a6938] py-2 pl-3 pr-10 shadow-sm sm:text-sm focus:ring-2 focus:ring-[#2d9155] transition-all duration-300" />
           <span className="absolute inset-y-0 right-0 flex items-center pr-3 text-[#1a6938]">
             <CiSearch className="text-xl" />
@@ -140,11 +140,11 @@ const AllReview = () => {
         <table className="table-auto w-full text-sm">
           <thead>
             <tr className="bg-gradient-to-r from-[#166534] to-[#2d9155] text-white">
-              <th className="px-4 py-2 text-left">Name</th>
-              <th className="px-4 py-2 text-left">Period</th>
-              <th className="px-4 py-2 text-left">Content</th>
-              <th className="px-4 py-2 text-left">Is Top</th>
-              <th className="px-4 py-2 text-left">Actions</th>
+              <th className="px-4 py-2 text-center">Name</th>
+              <th className="px-4 py-2 text-center">Period</th>
+              <th className="px-4 py-2 text-center">Review</th>
+              <th className="px-4 py-2 text-center">Is Top</th>
+              <th className="px-4 py-2 text-center">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -156,7 +156,17 @@ const AllReview = () => {
                   {review.content.split(" ").slice(0, 30).join(" ")}
                   {review.content.split(" ").length > 30 && "..."}
                 </td>
-                <td className="px-4 py-2">{review.isTop}</td>
+                <td className="px-4 py-2">
+                  {review.isTop ? (
+                    <span className="inline-block rounded-full bg-[#2d9155] px-3 py-1 text-xs font-semibold text-white shadow-md">
+                      Featured
+                    </span>
+                  ) : (
+                    <span className="inline-block rounded-full bg-gray-200 px-3 py-1 text-xs font-medium text-gray-700 shadow">
+                      Regular
+                    </span>
+                  )}
+                </td>
                 <td className="px-4 py-2 flex gap-2 flex-wrap">
                   <button onClick={() => handleUpdate(review)}
                     className="bg-[#f0fdf4] text-[#166534] border border-[#1a6938] px-3 py-1 rounded-lg hover:bg-[#2d9155]
@@ -242,7 +252,7 @@ const AllReview = () => {
                 </label>
                 <input type="text" id="img" name="img" value={selectedReview.img || ""} onChange={handleInputChange}
                   placeholder="Transformation image URL"
-                  className="w-full rounded-lg border border-[#ccebdc] p-2.5 text-sm focus:ring-[#2d9155] focus:border-[#2d9155] cursor-not-allowed" disabled/>
+                  className="w-full rounded-lg border border-[#ccebdc] p-2.5 text-sm focus:ring-[#2d9155] focus:border-[#2d9155] cursor-not-allowed" disabled />
               </div>
 
               <div className="sm:col-span-2">
