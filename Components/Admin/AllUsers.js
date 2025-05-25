@@ -74,7 +74,8 @@ const AllUsers = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to delete user');
+        alert('Failed to delete user.');
+        return;
       }
 
       const data = await response.json();
