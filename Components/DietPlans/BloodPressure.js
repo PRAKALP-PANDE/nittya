@@ -61,7 +61,7 @@ const BloodPressure = () => {
                                     <div className="bg-green-50 p-4 rounded-xl mb-6">
                                         <div className="flex items-center justify-between">
                                             <span className="font-medium">3 Months Plan (13 Weeks)</span>
-                                            <span className="font-bold text-[#166534]">₹5,999</span>
+                                            <span className="font-bold text-[#166534]">₹5,499</span>
                                         </div>
                                     </div>
                                     <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
