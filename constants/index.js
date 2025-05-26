@@ -73,10 +73,9 @@ const productsList = [
         "slug": "Kids-Nutrimix-Powder",
         "name": "Kids Nutrimix Powder",
         "images": [
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184987/te1j1hfzkk4yipuhhbts.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748185002/rglyegrlkugaoqvj7bsk.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184681/ota0jy0hf7uwhdpylz6h.jpg",
         ],
         "tagLine": "Wholesome Nutrition for Kids (1 Year & Above)",
         "description": "A daily nutrition mix made with carefully selected superfoods to support your child’s growth, brain development, digestion, and immunity — all in a naturally sweet, chocolatey taste kids love.",
@@ -116,10 +115,8 @@ const productsList = [
         "slug": "Nuts-and-Seeds-Powder",
         "name": "Nuts and Seeds Powder",
         "images": [
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184778/tkpug3vms1bnlxfz0owv.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748185049/dnd5duuirfsbdvrqqhtu.jpg",
         ],
         "tagLine": "A Nutrient-Dense Blend to Power Your Day",
         "description": "Nittya’s Nuts and Seeds Powder is a superfood-packed blend designed to fuel your body with essential nutrients. Whether you’re looking to boost your energy, improve digestion, or support bone health, this natural mix of almonds, walnuts, seeds, and skimmed milk powder provides the perfect balance of protein, healthy fats, and antioxidants for a healthy, vibrant lifestyle.",
@@ -157,10 +154,8 @@ const productsList = [
         "slug": "Sprouted-Ragi-Energy-Balls",
         "name": "Sprouted Ragi Energy Balls",
         "images": [
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184834/gjmzycsyu7vh6kvzfjyq.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748185071/r76d8otd8mixxcpqbxsw.jpg",
         ],
         "tagLine": "Natural Energy. Real Ingredients. Guilt-Free Snacking.",
         "description": "Nittya’s Sprouted Ragi Energy Balls are wholesome, naturally sweetened bites made with just four clean ingredients — sprouted ragi, almonds, makhana, and soft black dates. Rich in iron, calcium, and fiber, they’re perfect for boosting energy, improving digestion, and satisfying sweet cravings the healthy way.",
@@ -194,10 +189,8 @@ const productsList = [
         "slug": "Flaxseeds-Energy-Balls",
         "name": "Flaxseeds Energy Balls",
         "images": [
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184570/wvifxkib3hegu42ysxjm.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184933/gebppztloz9bqj3jly9t.jpg",
         ],
         "tagLine": "Fiber-Rich. Heart-Healthy. Naturally Sweet.",
         "description": "Nittya’s Flaxseeds Energy Balls are a nourishing snack made with a powerful mix of flaxseeds, unpolished white sesame seeds, almonds, makhana, and soft black dates. Rich in omega-3s, calcium, iron, and natural fiber, they support heart health, digestion, and sustained energy — all without any added sugar or preservatives.",
@@ -232,10 +225,8 @@ const productsList = [
         "slug": "Dink-Dryfruit-Laddoo",
         "name": "Dink Dryfruit Laddoo",
         "images": [
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184517/ftmkxdbxw19sk2pm9vyj.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184915/ihyvv1715ztcnocghqqs.jpg",
         ],
         "tagLine": "Traditional Goodness. Modern Nutrition.",
         "description": "Nittya’s Dink Dryfruit Laddoos are a nourishing blend of age-old ingredients known for strength, immunity, and warmth. Made with dink (edible gum), almonds, cashews, pistachios, dry date powder, poppy seeds, dry coconut, and soft black dates, these laddoos are perfect for postpartum recovery, winter nourishment, or daily energy needs.",
@@ -270,10 +261,8 @@ const productsList = [
         "slug": "Methi-Dink-Dryfruit-Laddoo",
         "name": "Methi Dink Dryfruit Laddoo",
         "images": [
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184741/znkggg3itdvdlq9dj9oe.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748185023/ds6dy97h0z6lytclandc.jpg",
         ],
         "tagLine": "Strength & Warmth in Every Bite",
         "description": "Nittya’s Methi Dink Dryfruit Laddoo is a traditional powerhouse of health — crafted with methi (fenugreek), dink (edible gum), almonds, cashews, pistachios, dry date powder, poppy seeds, dry coconut, and soft black dates. Ideal for postpartum care, joint strength, and winter nourishment, this laddoo supports digestion, stamina, and bone health.",
@@ -309,10 +298,8 @@ const productsList = [
         "slug": "Nuts-Seeds-Biotin-Energy-Balls",
         "name": "Nuts & Seeds Biotin Energy Balls",
         "images": [
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184392/eqavjyfvzni3wq3d3myn.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184444/i9vrq8r95lbdtptfkwlc.jpg",
         ],
         "tagLine": "Glow from Within — Naturally.",
         "description": "Nittya’s Nuts & Seeds Biotin Energy Balls are loaded with natural sources of biotin, omega-3s, and antioxidants — made from a blend of almonds, walnuts, makhana, pumpkin seeds, sunflower seeds, flaxseeds, and soft black dates. These delicious bites support hair, skin, nail health, and daily energy, all without refined sugar or preservatives.",
@@ -349,10 +336,8 @@ const productsList = [
         "slug": "Kids-Healthy-Dryfruit-Laddoo",
         "name": "Kids Healthy Dryfruit Laddoo",
         "images": [
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184647/nz0trlsvbdkhqvxevuex.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184952/jq0f0xfxawwd8yxqwor8.jpg",
         ],
         "tagLine": "Tasty. Nutritious. Kid-Approved.",
         "description": "Nittya’s Kids Healthy Dryfruit Laddoos are packed with the goodness of nuts, natural sweeteners, and multigrain flour — specially crafted to support growing bodies with clean, powerful nutrition. Made using almonds, cashews, pistachios, dry date powder, dink, poppy seeds, dry coconut, soft black dates, and multigrain atta, these laddoos are perfect for boosting energy, immunity, and overall health — all in a yummy bite kids will love!",
@@ -388,10 +373,8 @@ const productsList = [
         "slug": "Roasted-Seed-Mix",
         "name": "Roasted Seed Mix",
         "images": [
-            "https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184896/yz8ktsc3lmlau005lpum.jpg",
+            "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748185091/vp0r4aahf3uogpih9lbo.jpg"
         ],
         "tagLine": "Crunchy Nutrition for Everyday Wellness",
         "description": "Nittya’s Roasted Seed Mix is a delicious, ready-to-eat blend of sunflower, pumpkin, flax, sesame seeds, with a hint of fennel and ajwain for digestion and flavor. Lightly roasted for better taste and absorption, this mix is rich in fiber, protein, and healthy fats — perfect for snacking, topping, or boosting your meals.",
