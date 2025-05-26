@@ -4,7 +4,7 @@ var CryptoJS = require("crypto-js");
 
 const handler = async (req, res) => {
     if (req.method == 'POST') {
-        const { name, email, password } = req.body
+        const { name, email, password, isAdmin } = req.body
 
         // 2. Check if the email already exists in the database
         let existingUser = await User.findOne({ email });
@@ -16,7 +16,7 @@ const handler = async (req, res) => {
         const encryptedPassword = CryptoJS.AES.encrypt(password, process.env.AES_SECRET).toString();
 
         // 4. Create new user in the database
-        let u = new User({ name, email, password: encryptedPassword });
+        let u = new User({ name, email, password: encryptedPassword, isAdmin });
 
         try {
             await u.save();
