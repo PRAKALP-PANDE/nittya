@@ -59,8 +59,8 @@ export default function App({ Component }) {
       waitingTime={400}
       onLoaderFinished={() => setProgress(0)}
     />
-    <Navbar Logout={logout} user={user} key={key}  />
-    <Component Logout={logout} user={user} key={key}  />
+    <Navbar user={user} />
+    <Component Logout={logout} user={user}/>
     <Footer />
   </>
 }

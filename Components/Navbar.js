@@ -86,7 +86,8 @@ const Navbar = ({ user }) => {
         <div className="flex items-center space-x-6">
           {!user?.value ? (
             <Link
-              href="/contact"
+              href={GOOGLE_FORM_LINK} target="_blank"
+              rel="noopener noreferrer"
               className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 
         ${navbar || !isHome
                   ? 'bg-[#2d9155] text-white hover:bg-[#1a6938] hover:shadow-md'
