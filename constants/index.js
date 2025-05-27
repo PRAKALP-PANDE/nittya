@@ -71,6 +71,7 @@ const whatsappMessage = {
 const productsList = [
     {
         "slug": "Kids-Nutrimix-Powder",
+        "message" : "Hi, I'm reaching out to learn more about your Kids Nutrimix Powder product.",
         "name": "Kids Nutrimix Powder",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184987/te1j1hfzkk4yipuhhbts.jpg",
@@ -113,6 +114,7 @@ const productsList = [
     },
     {
         "slug": "Nuts-and-Seeds-Powder",
+        "message" : "Hi, I'm reaching out to learn more about your Nuts and Seeds Powder product.",
         "name": "Nuts and Seeds Powder",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184778/tkpug3vms1bnlxfz0owv.jpg",
@@ -152,6 +154,7 @@ const productsList = [
     },
     {
         "slug": "Sprouted-Ragi-Energy-Balls",
+        "message" : "Hi, I'm reaching out to learn more about your Sprouted Ragi Energy Balls product.",
         "name": "Sprouted Ragi Energy Balls",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184834/gjmzycsyu7vh6kvzfjyq.jpg",
@@ -187,6 +190,7 @@ const productsList = [
     },
     {
         "slug": "Flaxseeds-Energy-Balls",
+        "message" : "Hi, I'm reaching out to learn more about your Flaxseeds Energy Balls product.",
         "name": "Flaxseeds Energy Balls",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184570/wvifxkib3hegu42ysxjm.jpg",
@@ -223,6 +227,7 @@ const productsList = [
     },
     {
         "slug": "Dink-Dryfruit-Laddoo",
+        "message" : "Hi, I'm reaching out to learn more about your Dink Dryfruit Laddoo product.",
         "name": "Dink Dryfruit Laddoo",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184517/ftmkxdbxw19sk2pm9vyj.jpg",
@@ -259,6 +264,7 @@ const productsList = [
     },
     {
         "slug": "Methi-Dink-Dryfruit-Laddoo",
+        "message" : "Hi, I'm reaching out to learn more about your Methi Dink Dryfruit Laddoo product.",
         "name": "Methi Dink Dryfruit Laddoo",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184741/znkggg3itdvdlq9dj9oe.jpg",
@@ -296,6 +302,7 @@ const productsList = [
     },
     {
         "slug": "Nuts-Seeds-Biotin-Energy-Balls",
+        "message" : "Hi, I'm reaching out to learn more about your Nuts & Seeds Biotin Energy Balls product.",
         "name": "Nuts & Seeds Biotin Energy Balls",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184392/eqavjyfvzni3wq3d3myn.jpg",
@@ -334,6 +341,7 @@ const productsList = [
     },
     {
         "slug": "Kids-Healthy-Dryfruit-Laddoo",
+        "message" : "Hi, I'm reaching out to learn more about your Kids Healthy Dryfruit Laddoo product.",
         "name": "Kids Healthy Dryfruit Laddoo",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184647/nz0trlsvbdkhqvxevuex.jpg",
@@ -371,6 +379,7 @@ const productsList = [
     },
     {
         "slug": "Roasted-Seed-Mix",
+        "message" : "Hi, I'm reaching out to learn more about your Roasted Seed Mix product.",
         "name": "Roasted Seed Mix",
         "images": [
             "https://res.cloudinary.com/drqpi2lnn/image/upload/v1748184896/yz8ktsc3lmlau005lpum.jpg",
