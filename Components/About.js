@@ -12,7 +12,7 @@ const About = () => {
                             <div className="absolute -inset-2 bg-gradient-to-r from-[#2d9155] to-[#4ade80] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
                             <div className="relative overflow-hidden rounded-full shadow-2xl border-4 border-white">
                                 <img
-                                    src="https://www.mightymillets.com/assets/images/home_about_meena.jpg"
+                                    src="https://dummyimage.com/1080x1080"
                                     alt="Nutritionist Vidya Sawant"
                                     width={600}
                                     height={600}
@@ -51,7 +51,7 @@ const About = () => {
                         <div className="mb-8 flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full border-2 border-white shadow-md overflow-hidden">
                                 <img
-                                    src="https://www.mightymillets.com/assets/images/home_about_meena.jpg"
+                                    src="https://dummyimage.com/1080x1080"
                                     alt="Vidya Sawant"
                                     className="w-full h-full object-cover"
                                 />
