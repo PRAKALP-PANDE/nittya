@@ -50,7 +50,7 @@ const HealthConditionDiet = () => {
     };
 
     return (
-        <section className="py-10 bg-gray-100">
+        <section id='healthDiet' className="py-10 bg-gray-100">
             <div className="container mx-auto px- sm:px-6 lg:px-8">
             <div className="text-center mb-16">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">

@@ -9,23 +9,7 @@ const WomenDietPlan = () => {
     const whatsappLink = `https://wa.me/9922015121?text=${message}`;
 
     return (
-        <section className="relative py-16 md:py-28 overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-green-300 mix-blend-multiply filter blur-3xl"></div>
-                <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-green-200 mix-blend-multiply filter blur-3xl"></div>
-            </div>
-
-            {/* Leaf decoration */}
-            <svg
-                className="absolute top-10 right-10 w-24 h-24 text-green-100 hidden md:block"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-            >
-                <path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.522 4.82 3.889 6.115-.111.481-.176 1.092-.176 1.769 0 1.692.538 2.872 1.423 3.663.707.627 1.67.971 2.764.971 1.931 0 3.5-1.569 3.5-3.5 0-.774-.298-1.481-.781-2.022.482-.439.781-1.05.781-1.728 0-1.173-.795-2.151-1.876-2.42.01-.069.016-.14.016-.212C12 6.485 16 3 12 3zm6 10c0 2.21-1.343 4-3 4s-3-1.79-3-4 1.343-4 3-4 3 1.79 3 4z" />
-            </svg>
-
+        <section id='womenDiet' className="relative py-16 md:py-28 overflow-hidden">
             <div className="container px-5 mx-auto max-w-6xl relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">

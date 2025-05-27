@@ -9,7 +9,7 @@ const CoupleDietPlan = () => {
     const whatsappLink = `https://wa.me/9922015121?text=${message}`;
 
     return (
-        <section className="relative py-16 md:py-28 bg-gradient-to-br from-[#f0fdf4] to-[#e6f7ed] overflow-hidden">
+        <section id='coupleDiet' className="relative py-16 md:py-28 bg-gradient-to-br from-[#f0fdf4] to-[#e6f7ed] overflow-hidden">
             {/* Decorative elements */}
             <div className="absolute inset-0 opacity-10 overflow-hidden">
                 <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-[#2d9155] mix-blend-multiply filter blur-3xl"></div>
