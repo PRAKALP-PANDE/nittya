@@ -62,7 +62,7 @@ const FaqSection = () => {
     };
 
     return (
-        <div className="relative py-16 px-6 sm:px-10 lg:px-20 rounded-lg shadow-md overflow-hidden">
+        <div className="relative py-16 px-6 sm:px-10 lg:px-20 rounded-lg shadow-md overflow-hidden mb-4">
             {/* Decorative Images */}
             <AppleIcon color="red" size={48} alt="fruit" className="absolute top-4 left-4 w-20 opacity-30 rotate-12" />
             <img src="/homepage/vegie.jpg" alt="veggie" className="absolute bottom-4 right-4 w-24 opacity-30 rotate-[-12deg] bg-blend-color-burn" />
