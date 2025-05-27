@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { whatsappMessage } from '@/constants';
 
 const Footer = () => {
+  const message = whatsappMessage.heroSection;
+  const whatsappLink = `https://wa.me/9922015121?text=${message}`;
+
   return (
     <div>
       <footer className="text-gray-100 bg-[#31985a] body-font mt-4">
@@ -16,16 +20,16 @@ const Footer = () => {
               <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">SHOP</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <Link href={'/kids'} className="text-gray-200 hover:text-gray-800">Kids</Link>
+                  <Link href={'/shop'} className="text-gray-200 hover:text-gray-800">Products</Link>
                 </li>
                 <li>
-                  <Link href={'/women'} className="text-gray-200 hover:text-gray-800">Women's</Link>
+                  <Link href={'/product/Kids-Nutrimix-Powder'} className="text-gray-200 hover:text-gray-800">Kids</Link>
                 </li>
                 <li>
-                  <Link href={'/mens'} className="text-gray-200 hover:text-gray-800">Men's</Link>
+                  <Link href={'/product/Dink-Dryfruit-Laddoo'} className="text-gray-200 hover:text-gray-800">Dink Dryfruit Laddoo</Link>
                 </li>
                 <li>
-                  <Link href={'/energyballs'} className="text-gray-200 hover:text-gray-800">Energy Balls</Link>
+                  <Link href={'/product/Roasted-Seed-Mix'} className="text-gray-200 hover:text-gray-800">Roasted Seed Mix</Link>
                 </li>
               </nav>
             </div>
@@ -36,30 +40,30 @@ const Footer = () => {
                   <Link href={'/contact'} className="text-gray-200 hover:text-gray-800">Contact Us</Link>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">About Us</a>
+                  <Link href={'/#aboutUs'} className="text-gray-200 hover:text-gray-800">About Us</Link>
                 </li>
                 <li>
-                  <Link href={'/articles'} className="text-gray-200 hover:text-gray-800">Blogs</Link>
+                  <Link href={'/#happyCustomers'} className="text-gray-200 hover:text-gray-800">Featured Reviews</Link>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Fourth Link</a>
+                  <Link href={"/reviews"} className="text-gray-200 hover:text-gray-800">Client Testimonials</Link>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">HELP</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">Nutrition Plan</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Cancellation & Returns</a>
+                  <Link href={"/nutritionplan/#womenDiet"} className="text-gray-200 hover:text-gray-800">Women</Link>
                 </li>
                 <li>
-                  <Link href={'/faq'} className="text-gray-200 hover:text-gray-800">FAQ</Link>
+                  <Link href={'/nutritionplan/#mensDiet'} className="text-gray-200 hover:text-gray-800">Mens</Link>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Third Link</a>
+                  <Link href={"/nutritionplan/#coupleDiet"} className="text-gray-200 hover:text-gray-800">Couple</Link>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Fourth Link</a>
+                  <Link href={"/nutritionplan/#healthDiet"} className="text-gray-200 hover:text-gray-800">Health Condition</Link>
                 </li>
               </nav>
             </div>
@@ -67,16 +71,16 @@ const Footer = () => {
               <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">SOCIAL</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Instagram</a>
+                  <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-gray-800">Whatsapp</Link>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Facebook</a>
+                  <Link href={"https://www.facebook.com/share/1CAKFAPNKx/?mibextid=wwXIfr"} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-gray-800">Facebook</Link>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Twitter</a>
+                  <Link href={"https://www.instagram.com/nutritionist_vidyaasawant/"} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-gray-800">Instagram</Link>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-800">Linkedin</a>
+                  <Link href={"https://www.linkedin.com/in/nittya-your-daily-nutrition-915871347"} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-gray-800">Linkedin</Link>
                 </li>
               </nav>
             </div>
