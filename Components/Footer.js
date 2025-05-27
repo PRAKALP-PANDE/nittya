@@ -65,7 +65,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link 
                     href={item.href}
-                    className="text-gray-600 hover:text-white transition-colors duration-300"
+                    className="text-gray-600 hover:text-[#166534] hover:font-bold transition-colors duration-300"
                   >
                     {item.name}
                   </Link>
@@ -89,7 +89,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link 
                     href={item.href}
-                    className="text-gray-600 hover:text-white transition-colors duration-300"
+                    className="text-gray-600 hover:text-[#166534] hover:font-bold transition-colors duration-300"
                   >
                     {item.name}
                   </Link>
@@ -113,7 +113,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link 
                     href={item.href}
-                    className="text-gray-600 hover:text-white transition-colors duration-300"
+                    className="text-gray-600 hover:text-[#166534] hover:font-bold transition-colors duration-300"
                   >
                     {item.name}
                   </Link>
@@ -150,13 +150,13 @@ const Footer = () => {
             © {new Date().getFullYear()} Nittya Nutrition. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <Link href="/privacy" className="text-gray-800 hover:text-white text-sm transition-colors duration-300">
+            <Link href="/privacy" className="text-gray-800 hover:text-[#166534] hover:font-bold text-sm transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-800 hover:text-white text-sm transition-colors duration-300">
+            <Link href="/terms" className="text-gray-800 hover:text-[#166534] hover:font-bold text-sm transition-colors duration-300">
               Terms of Service
             </Link>
-            <Link href="/refund" className="text-gray-800 hover:text-white text-sm transition-colors duration-300">
+            <Link href="/refund" className="text-gray-800 hover:text-[#166534] hover:font-bold text-sm transition-colors duration-300">
               Refund Policy
             </Link>
           </div>
