@@ -1,5 +1,5 @@
 import { productsList } from '@/constants';
-import { useParams } from 'next/navigation';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
 // Sample Product Data (you can replace this with fetched data)
@@ -38,7 +38,8 @@ const productasdf = {
 };
 
 const Product = () => {
-    const { slug } = useParams();
+    const router = useRouter();
+    const { slug } = router.query;
     const product = productsList.find((p) => p.slug === slug);
 
     const [selectedImg, setSelectedImg] = useState(0);
