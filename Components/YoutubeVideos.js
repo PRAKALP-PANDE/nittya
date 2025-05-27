@@ -65,7 +65,7 @@ const YoutubeVideos = () => {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
                 {videos.map((video, index) => (
                     <div
-                        key={video.id}
+                        key={index}
                         className="rounded-xl overflow-hidden shadow-lg bg-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
                     >
                         <div className="rounded-lg overflow-hidden shadow-md bg-white">
