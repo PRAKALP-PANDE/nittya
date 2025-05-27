@@ -193,24 +193,18 @@ const Navbar = ({ user }) => {
             <div className="mt-12 px-8">
               <h3 className="text-white/80 text-sm font-medium mb-4 px-4">Connect With Us</h3>
               <div className="flex flex-wrap justify-center gap-3">
-                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                <Link href="https://www.instagram.com/nutritionist_vidyaasawant/" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
                   <IoLogoInstagram className="text-white text-2xl" />
-                </a>
-                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                </Link>
+                <Link href="https://www.facebook.com/share/1CAKFAPNKx/?mibextid=wwXIfr" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
                   <IoLogoFacebook className="text-white text-2xl" />
-                </a>
-                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                </Link>
+                <Link href="https://www.youtube.com/@NutritionWithVidya" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
                   <IoLogoYoutube className="text-white text-2xl" />
-                </a>
-                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
-                  <IoLogoTwitter className="text-white text-2xl" />
-                </a>
-                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
-                  <IoLogoPinterest className="text-white text-2xl" />
-                </a>
-                <a href="#" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
+                </Link>
+                <Link href="https://www.linkedin.com/in/nittya-your-daily-nutrition-915871347" className="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300">
                   <IoLogoLinkedin className="text-white text-2xl" />
-                </a>
+                </Link>
               </div>
             </div>
 
