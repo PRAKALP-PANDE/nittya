@@ -9,33 +9,35 @@ import Head from 'next/head';
 
 const images = [
   {
-    image: 'https://plus.unsplash.com/premium_photo-1661690177761-8d521bd794f9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: '/landing/1.png'
   },
   {
-    image: 'https://images.unsplash.com/photo-1684160244466-b89ef03b7638?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: '/landing/2.png'
   },
   {
-    image: 'https://plus.unsplash.com/premium_photo-1700053460290-f47d0726e7db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: '/landing/3.png'
   },
   {
-    image: 'https://images.unsplash.com/photo-1670698783848-5cf695a1b308?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: '/landing/4.png'
   },
 ];
 
 export default function Newhero() {
-  const message = whatsappMessage.womenDietPlan;
+  const message = whatsappMessage.heroSection;
   const whatsappLink = `https://wa.me/9922015121?text=${message}`;
 
   return (
     <section className="relative overflow-hidden py-12 md:py-28 px-4">
       <Head>
-        <title>Nittya.com - Your Daily Nutrition</title>
-        <meta name="description" content="Nittya: Your Daily Nutrition" />
+        <title>Best Nutritionist in Pune | Weightloss Diet Plans & Natural Nutrition</title>
+        <meta name="description" content="Nittya is a trusted nutritionist in Pune offering weight loss diet plans for PCOS, thyroid, diabetes, and more — plus handcrafted natural nutrition products." />
       </Head>
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-[#2d9155] mix-blend-multiply filter blur-3xl animate-float"></div>
         <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#4ade80] mix-blend-multiply filter blur-3xl animate-float-delay"></div>
+        <h1 className='hidden'>Trusted Nutritionist in Pune – Weightloss Diet Plans & Superfoods</h1>
+        <p className='hidden'>Looking for an experienced nutritionist in Pune? Nittya provides science-backed diet plans for weight loss, PCOS, diabetes, thyroid, and more, with natural nutrition products to support your journey.</p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -126,11 +128,11 @@ export default function Newhero() {
               {images.map((t, i) => (
                 <SwiperSlide key={i}>
                   <div className="relative w-full h-[450px] overflow-hidden rounded-3xl shadow-2xl group">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#2d9155]/10 to-[#166534]/10">
+                    <div className="absolute inset-0">
                       <img
                         src={t.image}
                         alt="Healthy Lifestyle"
-                        className="object-cover w-full h-full transform group-hover:scale-105 transition duration-1000"
+                        className="object-contain w-full h-full transform group-hover:scale-105 transition duration-1000"
                         quality={100}
                         priority
                       />
