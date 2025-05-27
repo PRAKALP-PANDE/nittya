@@ -3,6 +3,7 @@ import { AiOutlineShopping } from "react-icons/ai";
 import { MdCurrencyRupee } from "react-icons/md";
 import { productsList } from '@/constants';
 import Link from "next/link";
+import Head from "next/head";
 
 const ProductCard = ({ product }) => {
     const { name, tagLine, images, why_its_good, available_sizes, slug } = product;
@@ -10,6 +11,10 @@ const ProductCard = ({ product }) => {
 
     return (
         <div className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col border border-gray-100 hover:border-green-100">
+            <Head>
+                <title>Best Nutritionist in Pune | Weightloss Diet Plans & Natural Nutrition</title>
+                <meta name="description" content="Explore Nittya’s range of healthy nutrition products including Nutrimix powder, sugar-free laddoos, superfood seed mixes, and more. Natural, handcrafted, and dietitian-approved." />
+            </Head>
             {/* Image with badges */}
             <Link href={`/product/${slug}`} className="relative w-full h-64 overflow-hidden">
                 <img
@@ -32,11 +37,11 @@ const ProductCard = ({ product }) => {
             {/* Product details */}
             <div className="p-5 flex flex-col justify-between flex-grow">
                 <div>
-                    <div className="flex justify-between items-start gap-2">
+                    <Link href={`/product/${slug}`} className="flex justify-between items-start gap-2">
                         <h3 className="text-lg font-bold text-gray-900 line-clamp-2 leading-tight">
                             {name}
                         </h3>
-                    </div>
+                    </Link>
 
                     <p className="text-sm text-gray-600 mt-2 line-clamp-2">
                         {tagLine}
@@ -110,7 +115,7 @@ const Products = () => {
                 {/* Products grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {productsList && productsList.map((product, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                         >
@@ -120,14 +125,14 @@ const Products = () => {
                 </div>
 
                 {/* View more button */}
-                <div className="mt-12 text-center">
+                {/* <div className="mt-12 text-center">
                     <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                         View All Products
                         <svg className="ml-2 -mr-1 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     );

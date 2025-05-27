@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 
 const AllReviews = () => {
@@ -48,6 +49,10 @@ const AllReviews = () => {
 
   return (
     <div className="px-4 sm:px-6 lg:px-12 py-16 bg-[#f0fdf4]/30">
+      <Head>
+        <title>Best Nutritionist in Pune | Weightloss Diet Plans & Natural Nutrition</title>
+        <meta name="description" content="Read real client reviews and success stories from Nittya’s weightloss diet plans and nutrition products. Discover how a trusted nutritionist in Pune is transforming lives." />
+      </Head>
       {/* Section Header */}
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="font-bold text-3xl sm:text-4xl text-transparent bg-gradient-to-r from-[#166534] to-[#2d9155] bg-clip-text mb-4">
@@ -122,7 +127,7 @@ const AllReviews = () => {
                   </p>
                 </div>
 
-                {item.tags?.length > 0 && (
+                {/* {item.tags?.length > 0 && (
                   <div className="flex flex-wrap gap-2 mt-4">
                     {item.tags.map(tag => (
                       <span
@@ -133,7 +138,7 @@ const AllReviews = () => {
                       </span>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
             </div>
           ))}

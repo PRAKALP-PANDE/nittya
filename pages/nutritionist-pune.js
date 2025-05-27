@@ -5,7 +5,7 @@ import WomenDietPlan from '@/Components/WomenDietPlan'
 import React from 'react'
 import Head from 'next/head'
 
-const NutritionPlan = () => {
+const NutritionistPune = () => {
     return (
         <div>
             <Head>
@@ -20,4 +20,4 @@ const NutritionPlan = () => {
     )
 }
 
-export default NutritionPlan
+export default NutritionistPune

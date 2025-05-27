@@ -1,9 +1,14 @@
 import { GOOGLE_FORM_LINK } from '@/constants';
+import Head from 'next/head';
 import React from 'react';
 
 const Contact = () => {
     return (
         <section className="relative py-20 overflow-hidden">
+            <Head>
+                <title>Best Nutritionist in Pune | Weightloss Diet Plans & Natural Nutrition</title>
+                <meta name="description" content="Get in touch with Nittya, a leading nutritionist in Pune. Contact us for weightloss diet plans, health consultations, or product inquiries. We're here to support your wellness journey." />
+            </Head>
             {/* Decorative elements */}
             {/* <div className="absolute inset-0 opacity-10 overflow-hidden">
                 <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-green-300 mix-blend-multiply filter blur-3xl"></div>
@@ -96,7 +101,7 @@ const Contact = () => {
                                     <li>Fill out our Google Form</li>
                                     <li>We'll contact you within 24 hours</li>
                                     <li>Initial consultation session</li>
-                                    <li>Personalized plan creation</li>
+                                    <li>Plan creation</li>
                                 </ol>
                             </div>
 
