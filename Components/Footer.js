@@ -5,7 +5,7 @@ import { whatsappMessage } from '@/constants';
 
 const Footer = () => {
   const message = whatsappMessage.heroSection;
-  const whatsappLink = `https://wa.me/9922015121?text=${message}`;
+  const whatsappLink = `https://wa.me/9172683827?text=${message}`;
 
   return (
     <footer className="bg-white mt-4">

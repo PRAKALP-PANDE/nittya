@@ -24,7 +24,7 @@ const images = [
 
 export default function Newhero() {
   const message = whatsappMessage.heroSection;
-  const whatsappLink = `https://wa.me/9922015121?text=${message}`;
+  const whatsappLink = `https://wa.me/9172683827?text=${message}`;
 
   return (
     <section className="relative overflow-hidden py-12 md:py-28 px-4">

@@ -6,7 +6,7 @@ import { IoMdCheckmark } from "react-icons/io";
 
 const MensDietPlan = () => {
     const message = whatsappMessage.menDietPlan
-    const whatsappLink = `https://wa.me/9922015121?text=${message}`;
+    const whatsappLink = `https://wa.me/9172683827?text=${message}`;
 
     return (
         <section id='mensDiet' className="relative py-20 md:py-28 bg-gradient-to-br from-[#2d9155] to-[#1a6938] overflow-hidden">

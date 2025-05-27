@@ -7,7 +7,7 @@ import Image from 'next/image';
 const FattyLiver = () => {
 
     const message = whatsappMessage.fattyLiverPlan
-    const whatsappLink = `https://wa.me/9922015121?text=${message}`;
+    const whatsappLink = `https://wa.me/9172683827?text=${message}`;
 
     return (
         <section className="relative py-8 md:py-12">

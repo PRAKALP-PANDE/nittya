@@ -58,7 +58,7 @@ const Product = () => {
                     ))}
                 </div>
                 <div className="flex items-center gap-4 mt-4">
-                    <Link href={`https://wa.me/9922015121?text=${product.message}`} className="relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium text-white transition-all duration-500 bg-gradient-to-r from-[#166534] to-[#2d9155] rounded-md shadow-lg group hover:shadow-[0_10px_25px_-10px_rgba(45,145,85,0.4)] hover:translate-y-[-2px]">
+                    <Link href={`https://wa.me/9172683827?text=${product.message}`} className="relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium text-white transition-all duration-500 bg-gradient-to-r from-[#166534] to-[#2d9155] rounded-md shadow-lg group hover:shadow-[0_10px_25px_-10px_rgba(45,145,85,0.4)] hover:translate-y-[-2px]">
                         Learn More
                     </Link>
                 </div>
