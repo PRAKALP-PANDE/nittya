@@ -58,7 +58,7 @@ const HappyClients = () => {
                 <div className="md:w-1/2 md:pl-10 text-center md:text-left">
                   <h3 className="text-xl font-bold text-gray-800 capitalize">{item.name}</h3>
                   <p className="text-sm text-gray-500">{item.date}</p>
-                  <p className="mt-4 text-gray-700 italic">"{item.content}"</p>
+                  <p className="mt-4 text-gray-700 italic" dangerouslySetInnerHTML={{ __html: item.content }}></p>
                 </div>
               </div>
             </SwiperSlide>

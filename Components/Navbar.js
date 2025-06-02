@@ -107,7 +107,7 @@ const Navbar = ({ user }) => {
             >
               <span className="mr-2">Hello</span>
               <span className="bg-white/20 px-3 py-1 rounded-full text-lg font-bold shadow-inner backdrop-blur-sm cookie-regular">
-                {user.name}
+                {user?.name}
               </span>
             </Link>
           )}
@@ -222,12 +222,12 @@ const Navbar = ({ user }) => {
               )}
               {user?.value && (
                 <Link
-                  href="/admin"
+                  href="/nittyaadmin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full py-3 px-6 bg-white text-[#2d9155] font-semibold rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300"
-                >
-                  Hello Admin
+                >Hello 
+                  <span className='bg-white/20 px-3 py-1 rounded-full text-lg font-bold shadow-inner backdrop-blur-sm cookie-regular'>{user?.name}</span>
                 </Link>
               )}
             </div>

@@ -20,6 +20,12 @@ const images = [
   {
     image: '/landing/4.png'
   },
+  {
+    image: '/landing/5.png'
+  },
+  {
+    image: '/landing/6.png'
+  },
 ];
 
 export default function Newhero() {
@@ -33,7 +39,7 @@ export default function Newhero() {
         <meta name="description" content="Nittya is a trusted nutritionist in Pune offering weight loss diet plans for PCOS, thyroid, diabetes, and more — plus handcrafted natural nutrition products." />
       </Head>
       {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden opacity-20">
+      <div className="absolute inset-0 overflow-hidden opacity-20 hidden md:block">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-[#2d9155] mix-blend-multiply filter blur-3xl animate-float"></div>
         <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#4ade80] mix-blend-multiply filter blur-3xl animate-float-delay"></div>
         <h1 className='hidden'>Trusted Nutritionist in Pune – Weightloss Diet Plans & Superfoods</h1>
@@ -59,6 +65,33 @@ export default function Newhero() {
             <p className="text-lg md:text-xl text-gray-700 max-w-lg leading-relaxed">
               Scientifically crafted nutrition plans for your unique needs, helping you achieve sustainable wellness and vitality.
             </p>
+
+            <div className="w-full md:hidden pt-4">
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                loop={true}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 1000, disableOnInteraction: false }}
+              >
+                {images.map((t, i) => (
+                  <SwiperSlide key={i}>
+                    <div className="relative w-full h-[300px] overflow-hidden rounded-2xl shadow-xl group">
+                      <div className="absolute inset-0">
+                        <img
+                          src={t.image}
+                          alt="Healthy Lifestyle"
+                          className="object-contain w-full h-full transform group-hover:scale-105 transition duration-1000"
+                          quality={100}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
@@ -116,7 +149,7 @@ export default function Newhero() {
           </div>
 
           {/* Image Section */}
-          <div className="w-full lg:w-1/2 relative">
+          <div className="w-full lg:w-1/2 relative hidden md:block">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={30}

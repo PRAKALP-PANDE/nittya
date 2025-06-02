@@ -122,9 +122,10 @@ const AllReviews = () => {
 
                 <div className="relative">
                   {/* <QuoteIcon className="absolute -top-6 -left-6 text-[#2d9155]/10 w-16 h-16" /> */}
-                  <p className="text-gray-700 leading-relaxed text-lg relative z-10 pl-2">
-                    "{item.content || 'No review content provided'}"
-                  </p>
+                  <p
+                    className="text-gray-700 leading-relaxed text-lg relative z-10 pl-2"
+                    dangerouslySetInnerHTML={{ __html: item.content || 'No review content provided' }}
+                  ></p>
                 </div>
 
                 {/* {item.tags?.length > 0 && (
