@@ -1,5 +1,5 @@
 import React from 'react'
-import { Apple, CalendarClock, Plane, Target, Brain, HeartPulse, Utensils, Leaf } from 'lucide-react'
+import { Apple, HeartPulse, Utensils, Leaf, Baby, Activity, Shield, VenusAndMars } from 'lucide-react'
 import Image from 'next/image'
 
 const features = [
@@ -10,25 +10,25 @@ const features = [
         bg: 'bg-green-50'
     },
     {
-        icon: <CalendarClock className="w-8 h-8" />,
+        icon: <VenusAndMars className="w-8 h-8" />,
         text: 'Couples Diet',
         color: 'text-blue-500',
         bg: 'bg-blue-50'
     },
     {
-        icon: <Plane className="w-8 h-8" />,
+        icon: <HeartPulse className="w-8 h-8" />,
         text: "Diabetes Care",
         color: 'text-purple-500',
         bg: 'bg-purple-50'
     },
     {
-        icon: <Target className="w-8 h-8" />,
+        icon: <Activity className="w-8 h-8" />,
         text: 'Cholesterol & Blood Pressure Care',
         color: 'text-red-500',
         bg: 'bg-red-50'
     },
     {
-        icon: <Brain className="w-8 h-8" />,
+        icon: <Shield className="w-8 h-8" />,
         text: 'Fatty Liver Care',
         color: 'text-yellow-500',
         bg: 'bg-yellow-50'
@@ -40,13 +40,13 @@ const features = [
         bg: 'bg-pink-50'
     },
     {
-        icon: <Brain className="w-8 h-8" />,
+        icon: <Leaf className="w-8 h-8" />,
         text: 'PCOS/PCOD Diet',
         color: 'text-sky-500',
         bg: 'bg-sky-50'
     },
     {
-        icon: <HeartPulse className="w-8 h-8" />,
+        icon: <Baby className="w-8 h-8" />,
         text: 'Pregnancy & Postnatal Care',
         color: 'text-violet-500',
         bg: 'bg-violet-50'

@@ -77,21 +77,17 @@ const About = () => {
                             </div>
 
                             <div>
-                                <h4 className="text-lg font-semibold text-gray-900 mb-3">Our Signature Products:</h4>
+                                <h4 className="text-lg font-semibold text-gray-900 mb-3">Awards & Recognition:</h4>
                                 <ul className="grid grid-cols-2 gap-3">
                                     {[
-                                        'Kids Nutrimix Powder',
-                                        'Women\'s Nuts & Seeds Blend',
-                                        'Sugar-Free Laddoos',
-                                        'Daily Superfood Seed Mix',
-                                        'Dink Dryfruit Laddoo',
-                                        'Sprouted Ragi Energy Balls'
-                                    ].map((product, index) => (
+                                        'Women Exvellence Awards 2025',
+                                        'Maharashtra Business Leadership Award 2025'
+                                    ].map((award, index) => (
                                         <li key={index} className="flex items-start">
                                             <svg className="w-5 h-5 mr-2 text-[#2d9155] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                             </svg>
-                                            <span className="text-gray-700">{product}</span>
+                                            <span className="text-gray-700">{award}</span>
                                         </li>
                                     ))}
                                 </ul>

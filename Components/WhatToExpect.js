@@ -1,41 +1,40 @@
 import React from 'react'
-import { Apple, CalendarClock, Plane, Target, Brain, HeartPulse, Utensils, Leaf } from 'lucide-react'
-import { whatToExpect } from "../public/what_to_expect.png"
+import { Utensils, Leaf, BrainCircuit, Scale, Soup, FlaskConicalOff } from 'lucide-react'
 import Image from 'next/image'
 
 const features = [
     {
-        icon: <Apple className="w-8 h-8" />,
+        icon: <Utensils className="w-8 h-8" />,
         text: 'Simple, Home-Cooked Meals',
         color: 'text-green-500',
         bg: 'bg-green-50'
     },
     {
-        icon: <CalendarClock className="w-8 h-8" />,
+        icon: <FlaskConicalOff className="w-8 h-8" />,
         text: 'No Fancy Powders or Supplements',
         color: 'text-blue-500',
         bg: 'bg-blue-50'
     },
     {
-        icon: <Plane className="w-8 h-8" />,
+        icon: <Leaf className="w-8 h-8" />,
         text: "Sustainable & Practical Diet",
         color: 'text-purple-500',
         bg: 'bg-purple-50'
     },
     {
-        icon: <Target className="w-8 h-8" />,
+        icon: <Soup className="w-8 h-8" />,
         text: 'Wholesome & Fulfilling Meals',
         color: 'text-red-500',
         bg: 'bg-red-50'
     },
     {
-        icon: <Brain className="w-8 h-8" />,
+        icon: <BrainCircuit className="w-8 h-8" />,
         text: 'Focus on Nutritional Deficiencies',
         color: 'text-yellow-500',
         bg: 'bg-yellow-50'
     },
     {
-        icon: <HeartPulse className="w-8 h-8" />,
+        icon: <Scale className="w-8 h-8" />,
         text: 'Fat Loss & Inch Loss, Naturally',
         color: 'text-pink-500',
         bg: 'bg-pink-50'
@@ -44,7 +43,7 @@ const features = [
 
 const WhatToExpect = () => {
     return (
-        <section className="relative py-20 px-4 overflow-hidden">
+        <section className="relative py-20 px-4 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
             {/* Decorative elements */}
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-green-300 mix-blend-multiply filter blur-3xl"></div>
