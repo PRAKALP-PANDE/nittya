@@ -1,5 +1,7 @@
+import { GOOGLE_FORM_LINK } from '@/constants';
 import { Apple } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const About = () => {
@@ -80,7 +82,7 @@ const About = () => {
                                 <h4 className="text-lg font-semibold text-gray-900 mb-3">Awards & Recognition:</h4>
                                 <ul className="grid grid-cols-2 gap-3">
                                     {[
-                                        'Women Exvellence Awards 2025',
+                                        'Women Excellence Awards 2025',
                                         'Maharashtra Business Leadership Award 2025'
                                     ].map((award, index) => (
                                         <li key={index} className="flex items-start">
@@ -95,18 +97,20 @@ const About = () => {
                         </div>
 
                         <div className="mt-10 flex flex-wrap gap-4">
-                            <button className="px-8 py-3.5 bg-gradient-to-r from-[#2d9155] to-[#4ade80] text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
+                            <Link href={GOOGLE_FORM_LINK}
+                                target="_blank"
+                                rel="noopener noreferrer" className="px-8 py-3.5 bg-gradient-to-r from-[#2d9155] to-[#4ade80] text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
                                 <svg className="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                                 Book Consultation
-                            </button>
-                            <button className="px-8 py-3.5 bg-white text-gray-800 border border-gray-200 rounded-xl font-semibold shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-3 group">
+                            </Link>
+                            <Link href={'/journey'} className="px-8 py-3.5 bg-white text-gray-800 border border-gray-200 rounded-xl font-semibold shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-3 group">
                                 <svg className="w-5 h-5 text-[#2d9155] group-hover:animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                                 </svg>
                                 Our Methodology
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

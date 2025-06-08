@@ -45,7 +45,7 @@ const WhatToExpect = () => {
     return (
         <section className="relative py-20 px-4 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
             {/* Decorative elements */}
-            <div className="absolute inset-0 opacity-10">
+            <div className="hidden md:block absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-green-300 mix-blend-multiply filter blur-3xl"></div>
                 <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-green-200 mix-blend-multiply filter blur-3xl"></div>
             </div>
@@ -127,7 +127,7 @@ const WhatToExpect = () => {
                                 ))}
                             </div>
                             <p className="text-lg italic text-gray-700 mb-2">
-                                "The personalized plan completely changed my relationship with food. I've never felt better!"
+                                "The diet plan completely changed my relationship with food. I've never felt better!"
                             </p>
                             <p className="font-medium text-gray-900">- Priya M., Lost 12kg in 3 months</p>
                         </div>
