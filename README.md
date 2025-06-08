@@ -1,40 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🥗 Nutritionist Portfolio Website – Nittya
 
-## Getting Started
+![Vercel](https://img.shields.io/badge/Hosted%20on-Vercel-000?logo=vercel&logoColor=white)
+![Next.js](https://img.shields.io/badge/Built%20with-Next.js-000?logo=nextdotjs)
+![License](https://img.shields.io/github/license/your-username/nutritionist-portfolio)
 
-First, run the development server:
+A modern, mobile-responsive portfolio website built for a **nutritionist based in Pune**. Designed to establish a strong online presence for local wellness experts.
+
+🔗 **Live Demo**: [nittya.vercel.app](https://nittya.vercel.app/)  
+📁 **Clone This Template** to build your own client sites or health-focused landing pages!
+
+---
+
+## ✨ Features
+
+- 🎯 Clean and modern UI for personal branding
+- 🖼️ Home, About, Services, Testimonials, and Contact sections
+- ⚡ Blazing fast load speed with [Next.js](https://nextjs.org)
+- 📱 Fully responsive (Mobile, Tablet, Desktop)
+- 🌿 SEO optimized for local discovery (Pune, India)
+- 🧠 Easy to extend with CMS, forms, or appointment systems
+
+---
+
+## 📸 Screenshots
+
+| Desktop View | Mobile View |
+| ------------ | ----------- |
+| ![Desktop Screenshot](./public/screenshot-desktop.jpg) | ![Mobile Screenshot](./public/screenshot-mobile.jpg) |
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org)
+- **Styling**: Tailwind CSS
+- **Deployment**: [Vercel](https://vercel.com)
+- **Icons**: React Icons
+- **Forms**: Basic contact form (customizable for API/Email integration)
+
+---
+
+## 🛠️ Setup Instructions
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/your-username/nutritionist-portfolio.git
+
+# 2. Navigate to project directory
+cd nutritionist-portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Visit http://localhost:3000 to view the site locally.
+
+📦 Folder Structure
+```bash
+/pages         # Next.js pages
+/components    # Reusable UI components
+/public        # Static assets (images, icons)
+/styles        # Tailwind and global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🤝 Collaboration & Credits
+This project was designed and developed by Prakalp Pande as part of a portfolio showcase and freelance-ready template.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Looking to collaborate on similar websites for health experts or small businesses? Let’s connect!
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+📬 Contact
+📧 Email: prakalpsp16@gmail.com
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+🌐 Portfolio: https://prakalp-2002.web.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+💼 LinkedIn: linkedin.com/in/prakalp-pande
